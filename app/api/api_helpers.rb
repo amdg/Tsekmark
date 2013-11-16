@@ -61,6 +61,10 @@ module APIHelpers
     access_denied!(message)
   end
 
+  def post_to_social_media(vote)
+    current_user.facebook_client.put_wall_post(vote.comment) if author.facebook_client
+  end
+
 
   def logger
     API.logger

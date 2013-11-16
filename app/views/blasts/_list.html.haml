@@ -1,8 +1,0 @@
-%p.lead Recent Blasts
-- if blasts.length > 0
-  - blasts.each do |blast|
-    - do_show_location = (@location && @location != blast.blaster_location) || show_location
-    = render partial: 'blasts/item', :locals => { blast: blast, show_location: do_show_location, show_user: show_user }
-- else
-  = render partial: "layouts/empty"
-

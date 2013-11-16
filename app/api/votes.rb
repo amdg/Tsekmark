@@ -47,6 +47,7 @@ module Votes
         vote = Vote.new vote_params
 
         if vote.save!
+          post_to_social_media(vote)
           present vote
         else
           bad_request!

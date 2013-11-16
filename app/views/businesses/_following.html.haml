@@ -1,7 +1,0 @@
-- already_patronized = current_user == biz.user || blaster.following?(biz)
-%span{ class: "pull-right badge badge-#{already_patronized ? 'important' : 'info'}" }
-  %small
-    - if already_patronized
-      = link_to "Unfollow", unfollow_path('business',biz.id), :method => :delete
-    - else
-      = link_to "Follow", follow_path('business',biz.id), :method => :post
