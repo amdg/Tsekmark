@@ -22,16 +22,18 @@ com.tsekmark.views.sectors = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json("sectors.json", function(error, root) {
+    d3.json("sectors/list", function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
         .attr("class", "node")
+        .attr("data-id", function(d) { return d.id; })
         .attr("title", function(d) { return d.children ? null : d.name; })
         .call(com.tsekmark.views.sectors.position)
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
+      node.append("a").attr("href", function(d) { return "departments/"+ d.id; });
 
       d3.selectAll("button").on("click", function change() {
 
@@ -47,7 +49,7 @@ com.tsekmark.views.sectors = {
           var value = function(d) { return d.downvotes; }
         }
 
-
+        $('h1.header-text').text($(this).data('htext'));
         node
           .data(treemap.value(value).nodes)
           .transition()

@@ -142,6 +142,7 @@ GEM
       ruby-hmac
     font-awesome-rails (4.0.3.0)
       railties (>= 3.2, < 5.0)
+    forgery (0.5.0)
     formatador (0.2.4)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
@@ -377,6 +378,7 @@ DEPENDENCIES
   flat-ui-rails
   fog
   font-awesome-rails
+  forgery
   friendly_id
   grape
   grape-entity

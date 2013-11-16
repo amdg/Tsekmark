@@ -1,16 +1,19 @@
-.filters
-  %button.btn.btn-default.btn-circle.btn-lg.size-filter{type: "button", title: 'Budget'}
-    %i.icon-star
-  %button.btn.btn-primary.btn-circle.btn-lg.count-filter{type: "button", title: 'Count'}
-    %i.icon-plus-sign
-  %button.btn.btn-success.btn-circle.btn-lg.upvote-filter{type: "button", title: 'Upvotes'}
-    %i.icon-thumbs-up
-  %button.btn.btn-info.btn-circle.btn-lg.downvote-filter{type: "button", title: 'Downvotes'}
-    %i.icon-thumbs-down
-  %button.btn.btn-warning.btn-circle.btn-lg.buzz-filter{type: "button", title: 'Buzz'}
-    %i.icon-eye-open
+.header-desc
+  .well.pull-left
+    %h1.header-text Budget Allocated
+  .filters.pull-right
+    %button.btn.btn-default.btn-circle.btn-lg.size-filter{type: "button", title: 'Budget', 'data-htext' => 'Budget Allocated'}
+      %i.icon-star
+    %button.btn.btn-primary.btn-circle.btn-lg.count-filter{type: "button", title: 'Count', 'data-htext' => 'Count'}
+      %i.icon-plus-sign
+    %button.btn.btn-success.btn-circle.btn-lg.upvote-filter{type: "button", title: 'Upvotes', 'data-htext' => 'Upvotes'}
+      %i.icon-thumbs-up
+    %button.btn.btn-info.btn-circle.btn-lg.downvote-filter{type: "button", title: 'Downvotes', 'data-htext' => 'Downvotes'}
+      %i.icon-thumbs-down
+    %button.btn.btn-warning.btn-circle.btn-lg.buzz-filter{type: "button", title: 'Buzz', 'data-htext' => 'Most Talked About'}
+      %i.icon-eye-open
 
 
-
+.clearfix
 
 #collage1

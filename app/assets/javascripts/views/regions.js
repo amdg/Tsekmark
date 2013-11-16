@@ -47,7 +47,7 @@ com.tsekmark.views.regions = {
           var value = function(d) { return d.downvotes; }
         }
 
-
+        $('h1.header-text').text($(this).data('htext'));
         node
           .data(treemap.value(value).nodes)
           .transition()

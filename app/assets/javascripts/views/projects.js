@@ -22,7 +22,7 @@ com.tsekmark.views.projects = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json("flare.json", function(error, root) {
+    d3.json("department_list/" + $('#collage1').data('department-id'), function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
@@ -31,7 +31,9 @@ com.tsekmark.views.projects = {
         .call(com.tsekmark.views.projects.position)
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
-      node.append("span").text(function(d) { return d.children ? null : d.name; });
+      node.append("span").text(function(d) {
+        return d.children ? null : d.name;
+      });
 
       d3.selectAll("button").on("click", function change() {
 
@@ -46,8 +48,7 @@ com.tsekmark.views.projects = {
         } else if($(this).hasClass('downvote-filter')){
           var value = function(d) { return d.downvotes; }
         }
-
-
+        $('h1.header-text').text($(this).data('htext'));
         node
           .data(treemap.value(value).nodes)
           .transition()
@@ -57,7 +58,7 @@ com.tsekmark.views.projects = {
 
 
       });
-//      com.tsekmark.views.projects.textFill();
+      com.tsekmark.views.projects.textFill();
     });
     $('.btn-lg').tooltipster({
       theme: '.tooltipster-light'

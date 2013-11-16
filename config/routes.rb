@@ -29,9 +29,12 @@ Tsekmark::Application.routes.draw do
   get "/oauth2callback" => "invites#index"
   get "/invites/:provider/callback" => "invites#index"
 
-  resources :projects
+  get "sectors/list", :to => 'sectors#list'
+  get "departments/:id", :to => 'departments#index'
+  get "projects/:id", :to => 'projects#index'
+  get "projects/department_list/:id", :to => 'projects#department_list'
+  get "departments/sector_list/:id", :to => 'departments#sector_list'
   resources :sectors
-  resources :departments
   resources :regions
 
   resources :users

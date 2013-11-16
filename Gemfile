@@ -30,6 +30,7 @@ gem "grape-entity"
 #gem 'grape-swagger-rails', :git => 'https://github.com/BrandyMint/grape-swagger-rails.git'
 gem "rack-cors"
 gem "elasticsearch"
+gem "forgery"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
