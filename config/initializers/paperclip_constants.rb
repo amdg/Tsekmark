@@ -17,7 +17,6 @@ PAPERCLIP_DEFAULT_IMAGE_OPTIONS = {
   :use_timestamp => false,
   :whiny => false
 }
-ap PAPERCLIP_DEFAULT_IMAGE_OPTIONS
 PAPERCLIP_DEFAULT_DOC_OPTIONS = {
   :storage => Rails.application.config.paperclip_storage,
   :fog_directory => Rails.application.config.paperclip_fog_directory,
@@ -40,9 +39,6 @@ end
 Paperclip.interpolates(:dev_test_url) do |attachment, style|
   protocol = Rails.application.config.paperclip_protocol
   hostname = protocol == 'https' ? Rails.application.config.ssl_host : Rails.application.config.default_host
-  ap "-----------------------------------------------------------"
-  ap hostname
-  ap "-----------------------------------------------------------"
   "#{protocol}://#{hostname}/#{attachment.path(style).gsub(%r{^/}, "")}".gsub('public/', '')
 end
 

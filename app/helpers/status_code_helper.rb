@@ -20,8 +20,6 @@ module StatusCodeHelper
   end
 
   def handle_error(e)
-    ap e.backtrace
-    ap e.message
     flash[:alert] = e.message
     #redirect_to root_path
   end

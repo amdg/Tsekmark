@@ -6,7 +6,6 @@ class Authentication < ActiveRecord::Base
     authentication = Authentication.find_by_uid_and_provider(oauth.uid, oauth.provider)
     unless authentication
       blaster = context === 'biz' ? user.business : user
-      ap blaster
       blaster.authentications.create!(
         provider: oauth.provider,
         token: oauth.credentials.token,
