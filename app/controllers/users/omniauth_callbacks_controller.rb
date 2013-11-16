@@ -26,6 +26,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     unless user_signed_in?
       user = User.find_for_facebook_oauth(oauth_response)
       if user.persisted?
+
+        # Create fake location
+        user.update_attribute(:location, Location.first)
+
         set_flash_message(:notice, :success, :kind => "Facebook") if is_navigational_format?
         sign_in_and_redirect user, :event => :authentication #this will throw if user is not activated
       else
