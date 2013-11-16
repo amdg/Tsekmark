@@ -52,8 +52,8 @@ com.tsekmark.views.sectors = {
           .data(treemap.value(value).nodes)
           .transition()
           .duration(1500)
-          .each("end", com.tsekmark.views.projects.textFill)
-          .call(com.tsekmark.views.sectors.position);
+          .call(com.tsekmark.views.sectors.position)
+          .each("end", _.once(com.tsekmark.views.sectors.textFill) );
 
 
       });
@@ -69,12 +69,12 @@ com.tsekmark.views.sectors = {
       .style("top", function(d) { return d.y + "px"; })
       .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
       .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
-    $('.node').tooltipster({
-      theme: '.tooltipster-light'
-    });
   },
 
   textFill: function(){
     $('.node').textfill({ maxFontPixels: 72 });
+    $('.node').tooltipster({
+      theme: '.tooltipster-light'
+    });
   }
 }

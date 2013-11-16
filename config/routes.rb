@@ -60,6 +60,8 @@ Tsekmark::Application.routes.draw do
 
   resources :projects
   resources :sectors
+  resources :departments
+  resources :regions
 
   resources :users
   root :to => "home#index"

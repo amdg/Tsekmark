@@ -54,10 +54,11 @@ group :development do
   gem "better_errors", "~> 1.0.1"
   gem "binding_of_caller", "~> 0.7.1", :platforms => [:mri_19, :rbx]
   gem "hub", "~> 1.10.2", :require => nil
+  gem "capistrano", "~> 2.12.0"
 end
 
 gem "thin", "~> 1.6.1"
 gem "open4"
-
+gem "unicorn"
 gem "aws-sdk", "~> 1.5.7"
 gem "fog"

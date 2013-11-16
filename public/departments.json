@@ -1,0 +1,67 @@
+{
+  "name": "Departments",
+  "children": [
+    {
+      "name": "DECS",
+      "children": [
+        {"name": "DECS", "upvotes": 3123,"size": 39323, "downvotes": 323, "buzz": 25, "count": 1000}
+      ]
+    },
+    {
+      "name": "DILG",
+      "children": [
+        {"name": "DILG", "upvotes": 350,"size": 3432938, "downvotes": 36, "buzz": 8, "count": 1500}
+      ]
+    },
+    {
+      "name": "DPWH",
+      "children": [
+        {"name": "DPWH", "upvotes": 30,"size": 343338, "downvotes": 563, "buzz": 55, "count": 2000}
+      ]
+    },
+    {
+      "name": "DENR",
+      "children": [
+        {"name": "DENR", "upvotes": 150,"size": 393238, "downvotes": 78, "buzz": 1, "count": 800}
+      ]
+    },
+    {
+      "name": "NFA",
+      "children": [
+        {"name": "NFA", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    },
+    {
+      "name": "DAR",
+      "children": [
+        {"name": "DAR", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    },
+    {
+      "name": "PAG-ASA",
+      "children": [
+        {"name": "PAG-ASA", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    }
+    ,
+    {
+      "name": "DND",
+      "children": [
+        {"name": "DND", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    }
+    ,
+    {
+      "name": "NHA",
+      "children": [
+        {"name": "NHA", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    },
+    {
+      "name": "NFA",
+      "children": [
+        {"name": "NFA", "upvotes": 250,"size": 543938, "downvotes":383, "buzz": 99, "count": 1200}
+      ]
+    }
+  ]
+}

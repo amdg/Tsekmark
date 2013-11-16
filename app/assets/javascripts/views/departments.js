@@ -1,4 +1,4 @@
-com.tsekmark.views.projects = {
+com.tsekmark.views.departments = {
   init: function(){
     this.bindBehaviors();
   },
@@ -22,13 +22,13 @@ com.tsekmark.views.projects = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json("flare.json", function(error, root) {
+    d3.json("departments.json", function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
         .attr("class", "node")
         .attr("title", function(d) { return d.children ? null : d.name; })
-        .call(com.tsekmark.views.projects.position)
+        .call(com.tsekmark.views.departments.position)
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
@@ -52,12 +52,12 @@ com.tsekmark.views.projects = {
           .data(treemap.value(value).nodes)
           .transition()
           .duration(1500)
-          .call(com.tsekmark.views.projects.position)
-          .each("end", _.once(com.tsekmark.views.projects.textFill) );
+          .call(com.tsekmark.views.departments.position)
+          .each("end", _.once(com.tsekmark.views.departments.textFill) );
 
 
       });
-//      com.tsekmark.views.projects.textFill();
+      com.tsekmark.views.departments.textFill();
     });
     $('.btn-lg').tooltipster({
       theme: '.tooltipster-light'
