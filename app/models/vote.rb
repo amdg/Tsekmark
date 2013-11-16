@@ -21,10 +21,10 @@ class Vote < ActiveRecord::Base
     expose :general_appropriation, :using => GeneralAppropriation::Entity
   end
 
-  scope :upvote, where(vote_type: TYPE_UPVOTE)
-  scope :downvote, where(vote_type: TYPE_DOWNVOTE)
-  scope :vague, where(vote_type: TYPE_VAGUE)
-  scope :meh, where(vote_type: TYPE_MEH)
+  #scope :upvote, where(vote_type: TYPE_UPVOTE)
+  #scope :downvote, where(vote_type: TYPE_DOWNVOTE)
+  #scope :vague, where(vote_type: TYPE_VAGUE)
+  #scope :meh, where(vote_type: TYPE_MEH)
 
   def medium_photo
     photo.url(:medium)

@@ -1,5 +1,5 @@
 class TsekmarkAPI < Grape::API
-  version 'v1', using: :path
+  version 'v2', using: :path
   format :json
 
   helpers do
