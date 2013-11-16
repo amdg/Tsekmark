@@ -58,6 +58,9 @@ Tsekmark::Application.routes.draw do
     post :save
   end
 
+  resources :projects
+  resources :sectors
+
   resources :users
   root :to => "home#index"
 end
