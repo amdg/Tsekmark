@@ -21,6 +21,7 @@ class Base < Grape::API
   mount Users::API
   mount Votes::API
   mount Gas::API
+  mount Summary::API
 
   add_swagger_documentation markdown: true, api_version: "v1", hide_documentation_path: true
 

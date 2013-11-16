@@ -65,6 +65,9 @@ module APIHelpers
     current_user.facebook_client.put_wall_post(vote.comment) if author.facebook_client
   end
 
+  def search_client
+    @es_client ||= Elasticsearch::Client.new(host: Rails.application.config.es_host)
+  end
 
   def logger
     API.logger
