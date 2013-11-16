@@ -4,7 +4,8 @@ gem 'mysql2'
 gem 'jquery-rails'
 gem "haml-rails", ">= 0.4"
 gem "bootstrap-sass", ">= 2.3.0.0"
-gem "devise", ">= 2.2.3"
+gem "devise", "~> 2.2.4
+"
 gem "cancan", ">= 1.6.9"
 gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.1.0"
@@ -29,6 +30,12 @@ gem 'mailboxer'
 gem 'excon', '~> 0.21.0'
 gem 'unicorn'
 gem "flat-ui-rails"
+gem 'grape'
+gem 'grape-swagger'
+gem 'grape-entity'
+gem 'grape-swagger-rails', :git => 'https://github.com/BrandyMint/grape-swagger-rails.git'
+gem 'rack-cors'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

@@ -1,5 +1,5 @@
+include Grape::Entity::DSL
 class User < ActiveRecord::Base
-  #extend FriendlyId
   rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
@@ -11,16 +11,6 @@ class User < ActiveRecord::Base
   acts_as_followable
   acts_as_follower
 
-  #has_many :friendships
-  #has_many :patronages
-  #
-  #has_many :friends, :through => :friendships
-  #has_many :patronized_biz, :through => :patronages, :source => :business
-  #
-  #has_many :inverse_friendships, :class_name => "Friendship", :foreign_key => "friend_id"
-  #has_many :followers, :through => :inverse_friendships, :source => :user # Followers
-  #has_many :biz_followers, :through => :inverse_friendships, :source => :user # Followers
-
   has_many :blasts, :as => :blaster, :dependent => :destroy
   has_many :contacts, :as => :blaster, :dependent => :destroy
   has_many :comments, :as => :blaster, :dependent => :destroy
@@ -31,7 +21,7 @@ class User < ActiveRecord::Base
   has_one :twitter_auth, :as => :blaster, :class_name => 'Authentication', conditions: "provider='twitter'"
   has_one :business, dependent: :destroy
   belongs_to :location
-
+  attr_accessor :expose_token
   attr_accessible :role_ids, :as => :admin
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :twitter_uid,
                   :email, :first_name, :last_name, :linkedin_secret, :linkedin_token, :photo, :location
@@ -45,7 +35,12 @@ class User < ActiveRecord::Base
 
   validates_attachment_content_type :photo, :content_type => PAPERCLIP_ALLOWED_IMAGE_CONTENT_TYPES, :message => :invalid_image
 
-  #friendly_id :full_name, use: :slugged
+
+  entity :id, :email, :full_name, :medium_photo, :thumb_photo, :date_of_birth, :first_name, :last_name do
+    expose :authentication_token, :if => lambda { |object, options| object.expose_token === true }
+  end
+
+
   alias_attribute :name, :first_name
 
   scope :name_like, lambda { |term|
@@ -68,6 +63,14 @@ class User < ActiveRecord::Base
     end
     user.create_authentication(auth) if user.linkedin_auth.nil?
     user
+  end
+
+  def medium_photo
+    photo.url(:medium)
+  end
+
+  def thumb_photo
+    photo.url(:thumb)
   end
 
   def self.find_for_facebook_oauth(auth)

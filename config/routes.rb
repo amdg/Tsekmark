@@ -1,5 +1,8 @@
+require 'api'
+
 Tsekmark::Application.routes.draw do
   #mount Messaging::Engine => "/messaging"
+  mount GrapeSwaggerRails::Engine => '/swagger'
 
   devise_for :messaging_users
 
@@ -19,6 +22,8 @@ Tsekmark::Application.routes.draw do
     get :build
     post :create
   end
+
+  mount Base => "/"
 
   post "follow/:type/:id", :to => "follows#create", :as => :follow
   delete "unfollow/:type/:id", :to => "follows#destroy", :as => :unfollow
