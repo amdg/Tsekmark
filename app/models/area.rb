@@ -1,3 +1,7 @@
+include Grape::Entity::DSL
+
 class Area < ActiveRecord::Base
-  # attr_accessible :title, :body
+  has_many :general_appropriations
+
+  entity :id, :code, :name
 end

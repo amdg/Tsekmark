@@ -1,3 +1,9 @@
+include Grape::Entity::DSL
+
 class Department < ActiveRecord::Base
-  # attr_accessible :title, :body
+  has_many :owners
+  has_many :general_appropriations, :source => :general_appropriations, :through => :owners
+
+  entity :id, :code, :name
+
 end

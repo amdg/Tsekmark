@@ -19,6 +19,7 @@ class Base < Grape::API
   helpers APIHelpers
   mount API
   mount Users::API
+  mount Votes::API
 
   add_swagger_documentation markdown: true, api_version: "v1", hide_documentation_path: true
 
