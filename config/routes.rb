@@ -1,8 +1,6 @@
 Tsekmark::Application.routes.draw do
   #mount Messaging::Engine => "/messaging"
 
-  devise_for :messaging_users
-
   authenticated :user do
     root :to => 'dashboard#index'
   end

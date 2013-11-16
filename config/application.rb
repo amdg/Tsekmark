@@ -79,35 +79,16 @@ module Tsekmark
     config.assets.version = '1.0'
 
     config.quiet_assets = true
-    # LinkedIn
-    linkedin_creds = YAML.load_file(Rails.root + 'config/linkedin.yml')[Rails.env].symbolize_keys
-    config.linkedin_app_key = linkedin_creds[:api_key]
-    config.linkedin_app_secret = linkedin_creds[:api_secret]
 
     # FB
     facebook_creds = YAML.load_file(Rails.root + 'config/facebook.yml')[Rails.env].symbolize_keys
     config.fb_app_id = facebook_creds[:app_id]
     config.fb_app_secret = facebook_creds[:app_secret]
 
-    # Twitter
-    twitter_creds = YAML.load_file(Rails.root + 'config/twitter.yml')[Rails.env].symbolize_keys
-    config.twitter_app_id = twitter_creds[:app_id]
-    config.twitter_app_secret = twitter_creds[:app_secret]
-
     # Google
     google_creds = YAML.load_file(Rails.root + 'config/google.yml')[Rails.env].symbolize_keys
     config.google_app_id = google_creds[:app_id]
     config.google_app_secret = google_creds[:app_secret]
-
-    # Yahoo
-    yahoo_creds = YAML.load_file(Rails.root + 'config/yahoo.yml')[Rails.env].symbolize_keys
-    config.yahoo_app_id = yahoo_creds[:app_id]
-    config.yahoo_app_secret = yahoo_creds[:app_secret]
-
-    # Hotmail
-    hotmail_creds = YAML.load_file(Rails.root + 'config/hotmail.yml')[Rails.env].symbolize_keys
-    config.hotmail_app_id = hotmail_creds[:app_id]
-    config.hotmail_app_secret = hotmail_creds[:app_secret]
 
     # Assets
     config.asset_url = Rails.root + 'app/assets'
@@ -119,7 +100,7 @@ module Tsekmark
 
     # Paperclip
     Paperclip::Railtie.insert
-    Paperclip.options[:command_path] = `which identify`.sub(/\/identify/, '').strip
+    # Paperclip.options[:command_path] = `which identify`.sub(/\/identify/, '').strip
     s3_config = YAML.load_file("#{Rails.root}/config/s3.yml")[Rails.env] if File.exist?("#{Rails.root}/config/s3.yml")
     s3_bucket = s3_config ? s3_config.delete('bucket') : nil
     config.paperclip_storage = :filesystem
@@ -138,13 +119,5 @@ module Tsekmark
     config.paperclip_allowed_image_content_types = %w{image/jpg image/jpeg image/pjpeg image/png image/x-png image/gif}
     config.paperclip_allowed_doc_content_types = %w{application/pdf application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document text/plain}
     config.paperclip_max_size = 20.megabytes
-
-    def linkedin_app_key
-      config.linkedin_app_key
-    end
-
-    def linkedin_app_secret
-      config.linkedin_app_secret
-    end
   end
 end

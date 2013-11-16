@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  #extend FriendlyId
   rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
@@ -7,29 +6,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :token_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-  acts_as_messageable
   acts_as_followable
   acts_as_follower
 
-  #has_many :friendships
-  #has_many :patronages
-  #
-  #has_many :friends, :through => :friendships
-  #has_many :patronized_biz, :through => :patronages, :source => :business
-  #
-  #has_many :inverse_friendships, :class_name => "Friendship", :foreign_key => "friend_id"
-  #has_many :followers, :through => :inverse_friendships, :source => :user # Followers
-  #has_many :biz_followers, :through => :inverse_friendships, :source => :user # Followers
-
-  has_many :blasts, :as => :blaster, :dependent => :destroy
-  has_many :contacts, :as => :blaster, :dependent => :destroy
   has_many :comments, :as => :blaster, :dependent => :destroy
   has_many :authentications, :as => :blaster, :dependent => :destroy
 
   has_one :facebook_auth, :as => :blaster, :class_name => 'Authentication', conditions: "provider='facebook'"
-  has_one :linkedin_auth, :as => :blaster, :class_name => 'Authentication', conditions: "provider='linkedin'"
-  has_one :twitter_auth, :as => :blaster, :class_name => 'Authentication', conditions: "provider='twitter'"
-  has_one :business, dependent: :destroy
   belongs_to :location
 
   attr_accessible :role_ids, :as => :admin
@@ -123,56 +106,6 @@ class User < ActiveRecord::Base
     return nil unless facebook_auth
     Koala::Facebook::API.new facebook_auth.token
   end
-
-  def linkedin_client
-    return nil unless linkedin_auth
-    LinkedinFactory::authorize_user self
-  end
-
-  def twitter_client
-    return nil unless twitter_auth
-    Twitter::Client.new(
-        :oauth_token => twitter_auth.token,
-        :oauth_token_secret => twitter_auth.secret
-    )
-  end
-
-  def user_ids_that_matter
-    user_ids = neighbors.map(&:id) + self.followings.map(&:id) + [self.id]
-    user_ids.uniq
-  end
-
-  def biz_ids_that_matter
-    biz_ids = neighbor_businesses.map(&:id)
-    biz_ids += [self.business.id] if has_business?
-    biz_ids.uniq
-  end
-
-  def neighbors
-    return [] unless self.location
-    self.location.users.except(self)
-  end
-
-  def neighbor_businesses
-    return [] unless self.location
-    self.location.businesses
-  end
-  #
-  #def following?(other_user)
-  #
-  #end
-  #
-  #def followed_by?(other_user)
-  #  followers.include?(other_user)
-  #end
-  #
-  #def friendship_with(other_user)
-  #  friendships.find_by_friend_id other_user.id
-  #end
-  #
-  #def patronage_with(biz)
-  #  patronages.find_by_business_id biz.id
-  #end
 
   def has_business?
     business.present?
