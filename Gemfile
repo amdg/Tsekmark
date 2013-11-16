@@ -27,6 +27,7 @@ gem "flat-ui-rails"
 gem "grape"
 gem "grape-swagger"
 gem "grape-entity"
+gem 'grape-swagger-rails', :git => 'https://github.com/BrandyMint/grape-swagger-rails.git'
 gem "rack-cors"
 
 group :assets do

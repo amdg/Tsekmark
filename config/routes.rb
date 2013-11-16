@@ -13,7 +13,7 @@ Tsekmark::Application.routes.draw do
   end
 
   mount Base => "/"
-
+  mount GrapeSwaggerRails::Engine => '/swagger'
   resources :authentications, only: :destroy
 
   namespace :dashboard do
