@@ -12,6 +12,8 @@ Tsekmark::Application.routes.draw do
     get "users/sign_in", :to => "sessions#create", :as => :create_user_session
   end
 
+  mount TsekmarkAPI => '/api'
+
   namespace :profiles do
     get :choose
     get :build
