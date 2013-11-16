@@ -10,7 +10,7 @@ staging:
   app_id: 126887214165143
   app_secret: 43cd90700cd3187dd2e51f36dc680b45
 production:
-  app_id: 126887214165143
+  app_id: 288793177912685
 #  app_id: 464285523655222
-  app_secret: 43cd90700cd3187dd2e51f36dc680b45
+  app_secret: 3c533ab9ec2d16db0987ac80424f63dd
 #  app_secret: 54226bfa91c016f0bf684cd4a68c9863

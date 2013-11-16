@@ -10,7 +10,6 @@ module APIHelpers
     elsif params[:auth_token] and
       user = User.find_for_token_authentication(:auth_token => params[:auth_token])
       access_denied! unless user
-      access_denied! unless user.confirmed?
       return true
     else
       access_denied!
