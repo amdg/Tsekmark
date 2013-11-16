@@ -10,6 +10,7 @@ com = {
       $('.tooltip').tooltipster({
         theme: '.tooltipster-light'
       });
+
       $(function () {
         $('.checkall').on('click', function () {
           $(this).closest('form').find(':checkbox').prop('checked', this.checked);

@@ -69,9 +69,9 @@ gem "thin", ">= 1.5.0"
 group :production do
 
 end
-#gem 'rubber', :git => "https://github.com/rubber/rubber.git"
+gem 'rubber', :git => "https://github.com/rubber/rubber.git"
 gem 'open4'
 gem 'omnicontacts'
 
-gem 'aws-sdk', '~> 1.5.7'
+gem 'aws-sdk'
 gem 'fog'

@@ -8,23 +8,19 @@
         /[if lt IE 8]
           = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
         = javascript_include_tag "application"
-        = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
 
         = csrf_meta_tags
         = yield(:head)
-  %body{:class => "#{controller_name} #{action_name}"}
+  %body{:class => "#{controller_name} #{action_name} clean"}
     #wrap
-      = render 'layouts/navigation'
       #main{:role => "main"}
-        .container
-          .row
+        .container-fluid
+          .row-fluid
             = render 'layouts/messages'
-            .span12
-              = yield
+            = yield
         / ! end of .container
 
       #push
       / ! end of #main
-    = render partial: 'layouts/footer'
 
     = render partial: 'layouts/page_specific_js'
