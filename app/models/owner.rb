@@ -8,5 +8,5 @@ class Owner < ActiveRecord::Base
     expose :department, :using => Department::Entity
   end
 
-
+  # TODO Fix agency classification field (implement enum or change to string)
 end

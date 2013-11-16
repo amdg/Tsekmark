@@ -87,21 +87,14 @@ class TsekmarkAPI < Grape::API
       optional :from, type: Integer
     end
     get do
-      result = search_client.search q: params[:q], sort: 'budget_total:desc'
-      if params[:fields]
-        result = search_client.search q: params[:q], fields: params[:fields], sort: 'budget_total:desc'
-        hits = result['hits']
-        items = hits['hits'].map { |hit| hit['fields']}
-      else
-        result = search_client.search q: params[:q], sort: 'budget_total:desc'
-        hits = result['hits']
-        items = hits['hits'].map { |hit| hit['_source'] }
+      options = { q: params[:q], sort: 'budget_total:desc' }
+      [ :fields, :size, :from ].each do |opt|
+        options.merge!({opt => params[opt]}) if params[opt]
       end
-      { total: result['hits']['total'], result: items }
+      response = search_client.search(options)
+      result = response['hits']
+      map_key = params[:fields] ? 'fields' : '_source'
+      { total: result['total'], from: params[:from] || 0, result: result['hits'].map { |hit| hit[map_key] } }
     end
-  end
-
-  resource :item do
-
   end
 end
