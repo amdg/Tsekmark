@@ -98,6 +98,9 @@ module Tsekmark
     http_port =  domains_and_ports[:http].blank? ? nil : domains_and_ports[:http]
     config.default_host = [domains_and_ports[:default_host], http_port].compact.join(":")
 
+    es_config = YAML.load_file("#{Rails.root}/config/elasticsearch.yml")[Rails.env] if File.exist?("#{Rails.root}/config/elasticsearch.yml")
+    config.es_host = es_config['host']
+
     # Paperclip
     Paperclip::Railtie.insert
     # Paperclip.options[:command_path] = `which identify`.sub(/\/identify/, '').strip

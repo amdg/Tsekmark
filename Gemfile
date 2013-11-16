@@ -28,6 +28,7 @@ gem "grape"
 gem "grape-swagger"
 gem "grape-entity"
 gem "rack-cors"
+gem "elasticsearch"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
