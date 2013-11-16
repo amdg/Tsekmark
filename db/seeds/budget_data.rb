@@ -9,10 +9,15 @@ end
 
 source = File.join(Rails.root, 'data', 'agencies.csv')
 CSV.foreach(source) do |line|
-  (code, agency_type, name, department) = line
+  (code, agency_type, name, department, sector_code, sector_name) = line
   parent = Department.find_by_code(department)
   item = Owner.find_or_create_by_code(code)
-  item.assign_attributes({name: name, classification: agency_type, department: parent}, without_protection: true)
+  item.assign_attributes({
+                             name: name,
+                             classification: agency_type,
+                             department: parent,
+                             sector_code: sector_code || 'U',
+                             sector_name: sector_name || 'Unknown'}, without_protection: true)
   item.save!
 end
 
