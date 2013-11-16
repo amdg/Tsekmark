@@ -1,11 +1,9 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  <your title>: <your name>
+  Developers: Mawi Alvarez, Mervin Joseph Alvarez, Joseph Dayo, Anna Marseille Gabutero
   Site:
-  Twitter:
   Location:
 
 /* THANKS */
