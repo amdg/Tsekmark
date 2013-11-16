@@ -4,6 +4,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       %title= content_for?(:title) ? yield(:title) : "Tsekmark"
       %meta{:content => content_for?(:description) ? yield(:description) : "Tsekmark", :name => "description"}
+        = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Carrois+Gothic"
         = stylesheet_link_tag "application", :media => "all"
         /[if lt IE 8]
           = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"

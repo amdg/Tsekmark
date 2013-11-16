@@ -24,11 +24,6 @@
                   = link_to edit_blaster_path do
                     %i.icon-cog
                     Settings
-                - if current_user.has_business?
-                  %li
-                    = link_to dashboard_switch_path(redirect_path: current_url) do
-                      %i.icon-refresh
-                      Switch Context
                 %li
                   %a{:href => "#"}
                     %i.icon-envelope

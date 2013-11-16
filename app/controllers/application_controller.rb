@@ -64,10 +64,6 @@ class ApplicationController < ActionController::Base
     cookies[:context] = new_context
   end
 
-  def switch_context!
-    new_context = user_context? ? 'biz' : 'user'
-    set_context(new_context) if current_user.has_business?
-  end
 
   def default_context
     #current_user.has_business? ? 'biz' : 'user'

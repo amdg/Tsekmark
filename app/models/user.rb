@@ -121,10 +121,6 @@ class User < ActiveRecord::Base
     Koala::Facebook::API.new facebook_auth.token
   end
 
-  def has_business?
-    business.present?
-  end
-
   def mailboxer_email(object)
     #Check if an email should be sent for that object
     #if true

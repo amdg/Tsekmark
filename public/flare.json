@@ -7,10 +7,10 @@
         {
           "name": "DECS",
           "children": [
-            {"name": "Project 1", "size": 3938},
-            {"name": "Project 2", "size": 3812},
-            {"name": "Project 3", "size": 6714},
-            {"name": "Project 4", "size": 743}
+            {"name": "Project 1", "upvotes": 350,"size": 3938},
+            {"name": "Project 2", "upvotes": 350,"size": 3812},
+            {"name": "Project 3", "upvotes": 350,"size": 6714},
+            {"name": "Project 4", "upvotes": 350,"size": 743}
           ]
         }
       ]
@@ -21,43 +21,43 @@
         {
           "name": "DILG",
           "children": [
-            {"name": "Project 5", "size": 1983},
-            {"name": "Project 6", "size": 2047},
-            {"name": "Project 7", "size": 1375},
-            {"name": "Project 8", "size": 8746},
-            {"name": "Project 9", "size": 2202},
-            {"name": "Project 10", "size": 1382},
-            {"name": "Project 11", "size": 1629},
-            {"name": "Project 12", "size": 1675},
-            {"name": "Project 13", "size": 2042}
+            {"name": "Project 5", "upvotes": 350,"size": 1983},
+            {"name": "Project 6", "upvotes": 350,"size": 2047},
+            {"name": "Project 7", "upvotes": 350,"size": 1375},
+            {"name": "Project 8", "upvotes": 350,"size": 8746},
+            {"name": "Project 9", "upvotes": 350,"size": 2202},
+            {"name": "Project 10", "upvotes": 350,"size": 1382},
+            {"name": "Project 11", "upvotes": 350,"size": 1629},
+            {"name": "Project 12", "upvotes": 350,"size": 1675},
+            {"name": "Project 13", "upvotes": 350,"size": 2042}
           ]
         },
         {
           "name": "DOT",
           "children": [
-            {"name": "Project 14", "size": 1983},
-            {"name": "Project 15", "size": 2047},
-            {"name": "Project 16", "size": 1375},
-            {"name": "Project 17", "size": 8746},
-            {"name": "Project 18", "size": 2202},
-            {"name": "Project 19", "size": 1382},
-            {"name": "Project 20", "size": 1629},
-            {"name": "Project 21", "size": 1675},
-            {"name": "Project 22", "size": 2042}
+            {"name": "Project 14", "upvotes": 350,"size": 1983},
+            {"name": "Project 15", "upvotes": 350,"size": 2047},
+            {"name": "Project 16", "upvotes": 350,"size": 1375},
+            {"name": "Project 17", "upvotes": 350,"size": 8746},
+            {"name": "Project 18", "upvotes": 350,"size": 2202},
+            {"name": "Project 19", "upvotes": 350,"size": 1382},
+            {"name": "Project 20", "upvotes": 350,"size": 1629},
+            {"name": "Project 21", "upvotes": 350,"size": 1675},
+            {"name": "Project 22", "upvotes": 350,"size": 2042}
           ]
         },
         {
           "name": "DSWD",
           "children": [
-            {"name": "Project 23", "size": 1983},
-            {"name": "Project 24", "size": 2047},
-            {"name": "Project 25", "size": 1375},
-            {"name": "Project 26", "size": 8746},
-            {"name": "Project 27", "size": 2202},
-            {"name": "Project 28", "size": 1382},
-            {"name": "Project 29", "size": 1629},
-            {"name": "Project 30", "size": 1675},
-            {"name": "Project 31", "size": 2042}
+            {"name": "Project 23", "upvotes": 350,"size": 1983},
+            {"name": "Project 24", "upvotes": 350,"size": 2047},
+            {"name": "Project 25", "upvotes": 350,"size": 1375},
+            {"name": "Project 26", "upvotes": 350,"size": 8746},
+            {"name": "Project 27", "upvotes": 350,"size": 2202},
+            {"name": "Project 28", "upvotes": 350,"size": 1382},
+            {"name": "Project 29", "upvotes": 350,"size": 1629},
+            {"name": "Project 30", "upvotes": 350,"size": 1675},
+            {"name": "Project 31", "upvotes": 350,"size": 2042}
           ]
         }
       ]
@@ -68,22 +68,22 @@
         {
           "name": "Congress of the Philippines",
           "children": [
-            {"name": "Project 32", "size": 721},
-            {"name": "Project 33", "size": 4294},
-            {"name": "Project 34", "size": 9800},
-            {"name": "Project 35", "size": 1314},
-            {"name": "Project 36", "size": 2220}
+            {"name": "Project 32", "upvotes": 350,"size": 721},
+            {"name": "Project 33", "upvotes": 350,"size": 4294},
+            {"name": "Project 34", "upvotes": 350,"size": 9800},
+            {"name": "Project 35", "upvotes": 350,"size": 1314},
+            {"name": "Project 36", "upvotes": 350,"size": 2220}
           ]
         },
         {
           "name": "Office of the President",
           "children": [
-            {"name": "Project 37", "size": 1759},
-            {"name": "Project 38", "size": 2165},
-            {"name": "Project 39", "size": 586},
-            {"name": "Project 40", "size": 3331},
-            {"name": "Project 41", "size": 772},
-            {"name": "Project 42", "size": 3322}
+            {"name": "Project 37", "upvotes": 350,"size": 1759},
+            {"name": "Project 38", "upvotes": 350,"size": 2165},
+            {"name": "Project 39", "upvotes": 350,"size": 586},
+            {"name": "Project 40", "upvotes": 350,"size": 3331},
+            {"name": "Project 41", "upvotes": 350,"size": 772},
+            {"name": "Project 42", "upvotes": 350,"size": 3322}
           ]
         }
 
@@ -92,34 +92,34 @@
     {
       "name": "Debt Burden",
       "children": [
-        {"name": "Project 43", "size": 1616},
-        {"name": "Project 44", "size": 1027},
-        {"name": "Project 45", "size": 3891},
-        {"name": "Project 46", "size": 891},
-        {"name": "Project 47", "size": 2893},
-        {"name": "Project 48", "size": 5103},
-        {"name": "Project 49", "size": 3677},
-        {"name": "Project 50", "size": 781},
-        {"name": "Project 51", "size": 4141},
-        {"name": "Project 52", "size": 933},
-        {"name": "Project 53", "size": 5130},
-        {"name": "Project 54", "size": 3617},
-        {"name": "Project 55", "size": 3240},
-        {"name": "Project 56", "size": 2732},
-        {"name": "Project 57", "size": 2039},
-        {"name": "Project 58", "size": 1214},
-        {"name": "Project 59", "size": 3748},
-        {"name": "Project 60", "size": 843},
-        {"name": "Project 61", "size": 843},
-        {"name": "Project 62", "size": 1554},
-        {"name": "Project 63", "size": 970},
-        {"name": "Project 64", "size": 13896},
-        {"name": "Project 65", "size": 1594},
-        {"name": "Project 66", "size": 4130},
-        {"name": "Project 67", "size": 791},
-        {"name": "Project 68", "size": 1124},
-        {"name": "Project 69", "size": 1876},
-        {"name": "Project 70", "size": 1101}
+        {"name": "Project 43", "upvotes": 350,"size": 1616},
+        {"name": "Project 44", "upvotes": 350,"size": 1027},
+        {"name": "Project 45", "upvotes": 350,"size": 3891},
+        {"name": "Project 46", "upvotes": 350,"size": 891},
+        {"name": "Project 47", "upvotes": 350,"size": 2893},
+        {"name": "Project 48", "upvotes": 350,"size": 5103},
+        {"name": "Project 49", "upvotes": 350,"size": 3677},
+        {"name": "Project 50", "upvotes": 350,"size": 781},
+        {"name": "Project 51", "upvotes": 350,"size": 4141},
+        {"name": "Project 52", "upvotes": 350,"size": 933},
+        {"name": "Project 53", "upvotes": 350,"size": 5130},
+        {"name": "Project 54", "upvotes": 350,"size": 3617},
+        {"name": "Project 55", "upvotes": 350,"size": 3240},
+        {"name": "Project 56", "upvotes": 350,"size": 2732},
+        {"name": "Project 57", "upvotes": 350,"size": 2039},
+        {"name": "Project 58", "upvotes": 350,"size": 1214},
+        {"name": "Project 59", "upvotes": 350,"size": 3748},
+        {"name": "Project 60", "upvotes": 350,"size": 843},
+        {"name": "Project 61", "upvotes": 350,"size": 843},
+        {"name": "Project 62", "upvotes": 350,"size": 1554},
+        {"name": "Project 63", "upvotes": 350,"size": 970},
+        {"name": "Project 64", "upvotes": 350,"size": 13896},
+        {"name": "Project 65", "upvotes": 350,"size": 1594},
+        {"name": "Project 66", "upvotes": 350,"size": 4130},
+        {"name": "Project 67", "upvotes": 350,"size": 791},
+        {"name": "Project 68", "upvotes": 350,"size": 1124},
+        {"name": "Project 69", "upvotes": 350,"size": 1876},
+        {"name": "Project 70", "upvotes": 350,"size": 1101}
       ]
     },
     {
@@ -128,11 +128,11 @@
         {
           "name": "DND",
           "children": [
-            {"name": "Project 71", "size": 721},
-            {"name": "Project 72", "size": 4294},
-            {"name": "Project 73", "size": 9800},
-            {"name": "Project 74", "size": 1314},
-            {"name": "Project 75", "size": 2220}
+            {"name": "Project 71", "upvotes": 350,"size": 721},
+            {"name": "Project 72", "upvotes": 350,"size": 4294},
+            {"name": "Project 73", "upvotes": 350,"size": 9800},
+            {"name": "Project 74", "upvotes": 350,"size": 1314},
+            {"name": "Project 75", "upvotes": 350,"size": 2220}
           ]
         }
       ]
@@ -143,10 +143,10 @@
         {
           "name": "DPWH",
           "children": [
-            {"name": "Project 76", "size": 6367},
-            {"name": "Project 77", "size": 1229},
-            {"name": "Project 78", "size": 2059},
-            {"name": "Project 79", "size": 2291}
+            {"name": "Project 76", "upvotes": 350,"size": 6367},
+            {"name": "Project 77", "upvotes": 350,"size": 1229},
+            {"name": "Project 78", "upvotes": 350,"size": 2059},
+            {"name": "Project 79", "upvotes": 350,"size": 2291}
           ]
         }
 

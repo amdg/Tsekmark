@@ -19,9 +19,5 @@
                 %a{:href => "#"} Privacy Policy
               %li
                 %a{:href => "#"} Terms of Service
-          - if user_signed_in?
-            .span4.pull-right.white
-              - label = current_user.business.present? ? "Manage #{current_user.business.name}" : "List Your Business"
-              = link_to label, business_edit_path, class: 'btn btn-large btn-info'
       %hr/
       %p.muted.pull-center © Interoctavo, LLC || Tsekmark 2013. All rights reserved

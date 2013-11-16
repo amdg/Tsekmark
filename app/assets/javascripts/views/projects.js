@@ -30,12 +30,23 @@ com.tsekmark.views.projects = {
         .attr("title", function(d) { return d.children ? null : d.name; })
         .call(com.tsekmark.views.projects.position)
         .style("background", function(d) { return d.children ? color(d.name) : null; })
-        .text(function(d) { return d.children ? null : d.name; });
 
-      d3.selectAll("input").on("change", function change() {
-        var value = this.value === "count"
-          ? function() { return 1; }
-          : function(d) { return d.size; };
+      node.append("span").text(function(d) { return d.children ? null : d.name; });
+
+      d3.selectAll("button").on("click", function change() {
+
+        if($(this).hasClass('buzz-filter')) {
+          var value = function(d) { return d.buzz; }
+        } else if($(this).hasClass('size-filter')) {
+          var value = function(d) { return d.size; }
+        } else if($(this).hasClass('count-filter')) {
+          var value = function() { return 1; }
+        } else if($(this).hasClass('upvote-filter')){
+          var value = function(d) { return d.upvotes; }
+        } else if($(this).hasClass('downvote-filter')){
+          var value = function(d) { return d.downvote; }
+        }
+
 
         node
           .data(treemap.value(value).nodes)
@@ -45,8 +56,11 @@ com.tsekmark.views.projects = {
 
 
       });
+      com.tsekmark.views.projects.textFill();
     });
-
+    $('.btn-lg').tooltipster({
+      theme: '.tooltipster-light'
+    });
   },
 
   position: function(){
@@ -60,13 +74,13 @@ com.tsekmark.views.projects = {
   },
 
   slabText: function(){
-    $("div.box span").slabText({
+    $("div.node span").slabText({
 
     });
   },
 
   textFill: function(){
-    $('.box').textfill({ maxFontPixels: 72 });
+    $('.node').textfill({ maxFontPixels: 72 });
   },
 
   mason: function(){
