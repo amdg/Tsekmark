@@ -1,4 +1,5 @@
 class Owner < ActiveRecord::Base
   belongs_to :department
-  # attr_accessible :title, :body
+
+  # TODO Fix agency classification field (implement enum or change to string)
 end
