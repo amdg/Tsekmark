@@ -3,7 +3,7 @@ gem 'rails', '3.2.12'
 gem 'mysql2'
 gem 'jquery-rails'
 gem "haml-rails", ">= 0.4"
-gem "bootstrap-sass", ">= 2.3.0.0"
+gem "bootstrap-sass", "~> 2.3.2.0"
 gem "devise", "~> 2.2.4
 "
 gem "cancan", ">= 1.6.9"
