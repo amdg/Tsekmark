@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   acts_as_follower
 
   has_many :comments, :as => :blaster, :dependent => :destroy
+  has_many :votes, :dependent => :destroy
   has_many :authentications, :as => :blaster, :dependent => :destroy
 
   has_one :facebook_auth, :as => :blaster, :class_name => 'Authentication', conditions: "provider='facebook'"

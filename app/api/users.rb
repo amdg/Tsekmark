@@ -41,7 +41,30 @@ module Users
         end
       end
 
+      # Register
+      params do
+        group :user do
+          requires :first_name, :type => String, :desc => "User's first name"
+          requires :last_name, :type => String, :desc => "User's last name"
+          requires :email, :type => String, :desc => "Email address"
+          requires :password, :type => String, :desc => "Password"
+        end
+      end
+      post 'create' do
+        user_params = params[:user]
+        # Paperclip does not interpret a Hashie object from Grape/Rack
+        # so instantiate it as a ActionDispatch::Http::UploadedFile
+        user_params[:photo] = ActionDispatch::Http::UploadedFile.new(user_params[:photo]) if user_params[:photo]
+        resource = User.new user_params
 
+        if resource.save!
+          resource.expose_token = true
+          present resource, :auth_token => resource.authentication_token
+        else
+          bad_request!
+        end
+
+      end
     end
 
 

@@ -1,5 +1,29 @@
+include Grape::Entity::DSL
 class GeneralAppropriation < ActiveRecord::Base
   belongs_to :owner
   belongs_to :area
-  # attr_accessible :title, :body
+  has_many :votes
+
+  attr_accessible :year, :code, :description, :budget_ps, :budget_mooe, :budget_co, :owner_id, :area_id, :new_appropriation
+
+  entity :year, :code, :description, :budget_ps, :budget_mooe, :budget_co, :owner_id, :area_id, :new_appropriation do
+    expose :votes, :using => Vote::Entity
+  end
+
+  def upvotes
+    votes.upvote
+  end
+
+  def downvotes
+    votes.downvote
+  end
+
+  def vagues
+    votes.vague
+  end
+
+  def mehs
+    votes.meh
+  end
+
 end
