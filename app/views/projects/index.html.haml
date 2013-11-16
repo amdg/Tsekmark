@@ -1,4 +1,6 @@
 .header-desc
+  .well.pull-left.push-right
+    %h1.header-page Projects (#{@descriptor.name})  :
   .well.pull-left
     %h1.header-text Budget Allocated
   .filters.pull-right
@@ -16,4 +18,4 @@
 .clearfix
 
 
-#collage1{'data-department-id' => params[:id]}
+#collage1{'data-descriptor-id' => params[:id], 'data-descriptor-name' => @descriptor.class.name.downcase}

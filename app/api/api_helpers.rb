@@ -61,7 +61,7 @@ module APIHelpers
   end
 
   def post_to_social_media(vote)
-    current_user.facebook_client.put_wall_post(vote.comment) if author.facebook_client
+    current_user.facebook_client.put_wall_post(vote.comment) if current_user.facebook_client
   end
 
   def search_client

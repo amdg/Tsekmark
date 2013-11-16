@@ -1,7 +1,7 @@
 class SessionsController < Devise::SessionsController
 
   def create
-    set_context(default_context)
+    #set_context(default_context)
     super
   end
 

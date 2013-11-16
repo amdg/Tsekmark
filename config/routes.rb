@@ -32,6 +32,7 @@ Tsekmark::Application.routes.draw do
   get "departments/:id", :to => 'departments#index'
   get "projects/:id", :to => 'projects#index'
   get "projects/department_list/:id", :to => 'projects#department_list'
+  get "projects/region_list/:id", :to => 'projects#region_list'
   get "departments/sector_list/:id", :to => 'departments#sector_list'
   resources :sectors
   resources :regions

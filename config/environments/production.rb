@@ -80,7 +80,7 @@ Tsekmark::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-  config.paperclip_storage = :fog
+  config.paperclip_storage = :filesystem
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)

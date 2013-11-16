@@ -32,7 +32,7 @@ com.tsekmark.views.regions = {
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
-
+      node.append("a").attr("href", function(d) { return "/projects/"+ d.id; });
       d3.selectAll("button").on("click", function change() {
 
         if($(this).hasClass('buzz-filter')) {
