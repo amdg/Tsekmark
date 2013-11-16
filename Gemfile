@@ -55,7 +55,6 @@ end
 gem "thin", "~> 1.5.0"
 
 gem "open4"
-gem "omnicontacts"
 
 gem "aws-sdk", "~> 1.5.7"
 gem "fog"
