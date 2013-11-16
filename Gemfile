@@ -10,9 +10,7 @@ gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.1.0"
 gem "figaro", ">= 0.6.3"
 gem "libv8", ">= 3.11.8"
-gem 'linkedin'
 gem 'omniauth'
-gem 'omniauth-linkedin'
 gem 'omniauth-facebook'
 gem "acts_as_follower"
 gem "paperclip"
@@ -20,12 +18,9 @@ gem "font-awesome-rails"
 gem "mongoid", "~> 3.0.0"
 gem 'acts_as_commentable', '3.0.1'
 gem "koala", "~> 1.7.0rc1"
-gem 'omniauth-twitter'
-gem 'twitter'
 gem 'active_hash'
 gem 'friendly_id'
 gem 'awesome_print'
-gem 'mailboxer'
 gem 'excon', '~> 0.21.0'
 gem 'unicorn'
 gem "flat-ui-rails"
@@ -62,7 +57,6 @@ gem "thin", ">= 1.5.0"
 group :production do
 
 end
-#gem 'rubber', :git => "https://github.com/rubber/rubber.git"
 gem 'open4'
 gem 'omnicontacts'
 
