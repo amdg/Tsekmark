@@ -1,0 +1,11 @@
+development:
+  host: 192.168.56.101
+
+test:
+  host: 192.168.56.101
+
+staging:
+  host: 192.168.56.101
+
+production:
+  host: 192.168.56.101

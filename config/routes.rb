@@ -12,8 +12,11 @@ Tsekmark::Application.routes.draw do
     get "users/sign_in", :to => "sessions#create", :as => :create_user_session
   end
 
+  #mount TsekmarkAPI => '/api'
+
+
   mount Base => "/"
-  mount GrapeSwaggerRails::Engine => '/swagger'
+  #mount GrapeSwaggerRails::Engine => '/swagger'
   resources :authentications, only: :destroy
 
   namespace :dashboard do
