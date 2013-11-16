@@ -13,17 +13,29 @@ gaa.each do |line|
   next if line.size == 0
   (dpt_cd, dpt_name, agency_type, agency_cd, agency_name, code, description, area_cd, area_name, ps, mooe, co, net, *rest) = line
   raise "Derp: #{rest.inspect}" unless rest.empty?
-  dpt[dpt_cd] = dpt_name unless dpt.has_key?(dpt_cd)
-  agency[agency_cd] = [agency_type, agency_name] unless agency.has_key?(agency_cd)
-  area[area_cd.to_i] = area_name unless area.has_key? area_cd.to_i
+  dpt_cd = dpt_cd.upcase.strip
+  dpt[dpt_cd] = dpt_name.strip unless dpt.has_key?(dpt_cd)
+  agency_cd = agency_cd.upcase.strip
+  agency[agency_cd] = [agency_type.strip, agency_name.strip] unless agency.has_key?(agency_cd)
+  area_cd = area_cd.strip
+  if (area_cd =~ /^\d+$/)
+    area_cd = area_cd.to_i
+  end
+  area[area_cd] = area_name unless area.has_key? area_cd
 end
 na.each do |line|
   next if line.size == 0
   (dpt_cd, dpt_name, agency_type, agency_cd, agency_name, code, description, area_cd, area_name, ps, mooe, co, net, *rest) = line
   raise "Derp: #{rest.inspect}" unless rest.empty?
-  dpt[dpt_cd] = dpt_name unless dpt.has_key? dpt_cd
-  agency[agency_cd] = [agency_type, agency_name] unless agency.has_key? agency_cd
-  area[area_cd.to_i] = area_name unless area.has_key? area_cd.to_i
+  dpt_cd = dpt_cd.upcase.strip
+  dpt[dpt_cd] = dpt_name.strip unless dpt.has_key?(dpt_cd)
+  agency_cd = agency_cd.upcase.strip
+  agency[agency_cd] = [agency_type.strip, agency_name.strip] unless agency.has_key?(agency_cd)
+  area_cd = area_cd.strip
+  if (area_cd =~ /^\d+$/)
+    area_cd = area_cd.to_i
+  end
+  area[area_cd] = area_name unless area.has_key? area_cd
 end
 CSV.open("data/departments.csv", "wb") do |csv|
   dpt.each { |k,v| csv << [k, v].flatten }

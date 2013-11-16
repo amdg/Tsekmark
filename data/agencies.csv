@@ -15,7 +15,7 @@ FPA,AGENCY,Fertilizer and Pesticide Authority
 FIDA,AGENCY,Fiber Industry Development Authority
 LDC,AGENCY,Livestock Development Council
 NAFC,AGENCY,National Agricultural and Fishery Council
-NMIC,AGENCY,National Meat Inspection Service 
+NMIC,AGENCY,National Meat Inspection Service
 NNC,AGENCY,National Nutrition Council
 PCC,AGENCY,Philippine Carabao Center
 BUPHIRE,AGENCY,Philippine Center for Postharvest Development and Mechanization
@@ -65,11 +65,11 @@ PMMA,AGENCY,Philippine Merchant Marine Academy
 RMTU,AGENCY,Ramon Magsaysay Technological University
 TCA,AGENCY,Tarlac College of Agriculture
 TSU,AGENCY,Tarlac State University
-BTSU,AGENCY,Batangas State University 
+BTSU,AGENCY,Batangas State University
 CASU,AGENCY,Cavite State University
 LSPC,AGENCY,Laguna State Polytechnic University (Laguna State Polytechnic College)
 SLPC,AGENCY,Southern Luzon State University (Southern Luzon Polytechnic College)
-URS,AGENCY,University of Rizal System 
+URS,AGENCY,University of Rizal System
 MSC,AGENCY,Marinduque State College
 MSCAT,AGENCY,Mindoro State University
 OMNC,AGENCY,Occidental Mindoro State College (Occidental Mindoro National College)
@@ -90,7 +90,7 @@ CHMSC,AGENCY,Carlos C. Hilado Memorial State College
 GSC,AGENCY,Guimaras State College
 ISCOF,AGENCY,Iloilo State University of Science and Technology
 NSCA,AGENCY,Central Philippines State University
-NIPSC,AGENCY,Northern Iloilo  State University 
+NIPSC,AGENCY,Northern Iloilo  State University
 NNSCST,AGENCY,Northern Negros State College of Science and Technology
 POLSCAN,AGENCY,University of Antique (Polytechnic State College of Antique)
 WVCST,AGENCY,Iloilo Science and Technology University
@@ -106,7 +106,7 @@ LNU,AGENCY,Leyte Normal University
 VISCA,AGENCY,Visayas State University (Leyte State University)
 NIT,AGENCY,Naval State University (Naval Institute of Technology)
 PIT,AGENCY,Palompon Polytechnic State University
-SLSU,AGENCY,Southern Leyte State University (Southern Leyte State College of Sci. and Tech. and TONC) 
+SLSU,AGENCY,Southern Leyte State University (Southern Leyte State College of Sci. and Tech. and TONC)
 SSCAF,AGENCY,Samar State College of Agriculture and Forestry
 SSU,AGENCY,Samar State University (Samar State Polytechnic College)
 TIMIST,AGENCY,Northwest Samar State University (TTMIST and SSCAF)
