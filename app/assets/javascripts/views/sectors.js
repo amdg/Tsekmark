@@ -1,4 +1,4 @@
-com.tsekmark.views.projects = {
+com.tsekmark.views.sectors = {
   init: function(){
     this.bindBehaviors();
   },
@@ -22,13 +22,13 @@ com.tsekmark.views.projects = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json("flare.json", function(error, root) {
+    d3.json("sectors.json", function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
         .attr("class", "node")
         .attr("title", function(d) { return d.children ? null : d.name; })
-        .call(com.tsekmark.views.projects.position)
+        .call(com.tsekmark.views.sectors.position)
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
@@ -53,11 +53,11 @@ com.tsekmark.views.projects = {
           .transition()
           .duration(1500)
           .each("end", com.tsekmark.views.projects.textFill)
-          .call(com.tsekmark.views.projects.position);
+          .call(com.tsekmark.views.sectors.position);
 
 
       });
-//      com.tsekmark.views.projects.textFill();
+      com.tsekmark.views.sectors.textFill();
     });
     $('.btn-lg').tooltipster({
       theme: '.tooltipster-light'

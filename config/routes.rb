@@ -59,6 +59,7 @@ Tsekmark::Application.routes.draw do
   end
 
   resources :projects
+  resources :sectors
 
   resources :users
   root :to => "home#index"
