@@ -1,385 +1,385 @@
-ARF,SPF,Agrarian Reform Fund
-SP,AGENCY,Senate
-SET,SUBAGENCY,Senate Electoral Tribunal
-CA,AGENCY,Commission on Appointments
-HR,AGENCY,House of Representatives
-HET,SUBAGENCY,House Electoral Tribunal
-OP-PROPER,AGENCY,The President's Offices
-OVP,DEPARTMENT,Office of the Vice-President
-OSEC-DAR,AGENCY,Office of the Secretary
-OSEC-DA,AGENCY,Office of the Secretary
-ACPC,AGENCY,Agricultural Credit Policy Council
-BFAR,AGENCY,Bureau of Fisheries and Aquatic Resources
-CODA,AGENCY,Cotton Development Administration
-FPA,AGENCY,Fertilizer and Pesticide Authority
-FIDA,AGENCY,Fiber Industry Development Authority
-LDC,AGENCY,Livestock Development Council
-NAFC,AGENCY,National Agricultural and Fishery Council
-NMIC,AGENCY,National Meat Inspection Service
-NNC,AGENCY,National Nutrition Council
-PCC,AGENCY,Philippine Carabao Center
-BUPHIRE,AGENCY,Philippine Center for Postharvest Development and Mechanization
-SRA-DA,AGENCY,Sugar Regulatory Administration
-OSEC-DBM,AGENCY,Office of the Secretary
-GPPB-TSO,AGENCY,Government Procurement Policy Board - Technical Support Office
-OSEC-DECS,AGENCY,Office of the Secretary
-NBDB-DECS,AGENCY,National Book Development Board
-NCCT-DECS,AGENCY,National Council for Children's Television
-NM,AGENCY,National Museum
-PHSA,AGENCY,Philippine High School for the Arts
-EARIST,AGENCY,Eulogio 'Amang' Rodriguez Institute of Science and Technology
-MAPC,AGENCY,Marikina Polytechnic College
-PNU,AGENCY,Philippine Normal University
-PSCA,AGENCY,Philippine State College of Aeronautics
-PUP,AGENCY,Polytechnic University of the Philippines
-RTC,AGENCY,Rizal Technological University
-TUP,AGENCY,Technological University of the Philippines
-UPS,AGENCY,University of the Philippines System
-DMMMSU,AGENCY,Don Mariano Marcos Memorial State University
-ISPSC,AGENCY,Ilocos Sur Polytechnic State College
-MMSU,AGENCY,Mariano Marcos State University
-NLPSC,AGENCY,North Luzon Philippines State College
-PSU,AGENCY,Pangasinan State University
-UNP,AGENCY,University of Northern Philippines
-ASIST,AGENCY,Abra State Institute of Science and Technology
-ASC,AGENCY,Apayao State College
-BSU,AGENCY,Benguet State University
-ISCAF,AGENCY,Ifugao State University
-KASC,AGENCY,Kalinga-Apayao State College
-MTPSPC,AGENCY,Mountain Province State Polytechnic College
-BATSC,AGENCY,Batanes State College (Batanes Polytechnic College)
-CSU,AGENCY,Cagayan State University
-ISU,AGENCY,Isabela State University
-NVSU,AGENCY,Nueva Vizcaya State University ( NVSIT and NVSPC)
-QSC,AGENCY,Quirino State University
-ASCOT,AGENCY,Aurora State College of Technology
-BPSU,AGENCY,Bataan Peninsula State University
-BPSC,AGENCY,Bataan Polytechnic State College
-CLSU,AGENCY,Central Luzon State University
-BULSU,AGENCY,Bulacan State University
-BNASC,AGENCY,Bulacan Agricultural State College
-DHVCAT,AGENCY,Don Honorio Ventura Technological State University (DHVCAT)
-NEUST,AGENCY,Nueva Ecija University of Science and Technology
-PAC,AGENCY,Pampanga State Agricultural University
-PMMA,AGENCY,Philippine Merchant Marine Academy
-RMTU,AGENCY,Ramon Magsaysay Technological University
-TCA,AGENCY,Tarlac College of Agriculture
-TSU,AGENCY,Tarlac State University
-BTSU,AGENCY,Batangas State University
-CASU,AGENCY,Cavite State University
-LSPC,AGENCY,Laguna State Polytechnic University (Laguna State Polytechnic College)
-SLPC,AGENCY,Southern Luzon State University (Southern Luzon Polytechnic College)
-URS,AGENCY,University of Rizal System
-MSC,AGENCY,Marinduque State College
-MSCAT,AGENCY,Mindoro State University
-OMNC,AGENCY,Occidental Mindoro State College (Occidental Mindoro National College)
-PSC,AGENCY,Palawan State University
-RSC,AGENCY,Romblon State University (Romblon State College)
-WPU,AGENCY,Western Philippines University
-BU,AGENCY,Bicol University
-CNSC,AGENCY,Camarines Norte State College
-CSPC,AGENCY,Camarines Sur Polytechnic Colleges
-CSSAC,AGENCY,Central Bicol State University of Agriculture  (Camarines Sur State Agricultural College)
-CATSC,AGENCY,Catanduanes State University
-DEEMSCAT,AGENCY,"Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology"
-PARSC,AGENCY,Partido State University
-SSTC,AGENCY,Sorsogon State College
-ASU,AGENCY,Aklan State University
-CAPSU,AGENCY,Capiz State University
-CHMSC,AGENCY,Carlos C. Hilado Memorial State College
-GSC,AGENCY,Guimaras State College
-ISCOF,AGENCY,Iloilo State University of Science and Technology
-NSCA,AGENCY,Central Philippines State University
-NIPSC,AGENCY,Northern Iloilo  State University
-NNSCST,AGENCY,Northern Negros State College of Science and Technology
-POLSCAN,AGENCY,University of Antique (Polytechnic State College of Antique)
-WVCST,AGENCY,Iloilo Science and Technology University
-WVSU,AGENCY,West Visayas State University
-CNU,AGENCY,Cebu Normal University
-CSCST,AGENCY,Cebu Technological University (Cebu State College of Science and Technology)
-CVSCAFT,AGENCY,"Bohol Island State University  (Central Visayas State College of Agr.,  Forestry and Tech.)"
-CVPC,AGENCY,Negros Oriental State University (Central Visayas Polytechnic College)
-SISC,AGENCY,Siquijor State College
-ESSU,AGENCY,Eastern Samar State University
-EVSU,AGENCY,Eastern Visayas State University (Leyte Institute of Technology)
-LNU,AGENCY,Leyte Normal University
-VISCA,AGENCY,Visayas State University (Leyte State University)
-NIT,AGENCY,Naval State University (Naval Institute of Technology)
-PIT,AGENCY,Palompon Polytechnic State University
-SLSU,AGENCY,Southern Leyte State University (Southern Leyte State College of Sci. and Tech. and TONC)
-SSCAF,AGENCY,Samar State College of Agriculture and Forestry
-SSU,AGENCY,Samar State University (Samar State Polytechnic College)
-TIMIST,AGENCY,Northwest Samar State University (TTMIST and SSCAF)
-UEP,AGENCY,University of Eastern Philippines
-JHCESC,AGENCY,J. H. Cerilles State College
-JRMSC,AGENCY,Jose Rizal Memorial State University (Jose Rizal Memorial State College)
-WMSU,AGENCY,Western Mindanao State University
-ZCSPC,AGENCY,Zamboanga City State Polytechnic College
-ZSCMST,AGENCY,Zamboanga State College of Marine Sciences and Technology
-BUKSC,AGENCY,Bukidnon State University
-CPSC,AGENCY,Camiguin Polytechnic State College
-CMU,AGENCY,Central Mindanao University
-MPSC,AGENCY,Mindanao University of Science and Technology
-MSU-IIT,AGENCY,MSU-Iligan Institute of Technology
-MOSCAT,AGENCY,Misamis Oriental State College of Agriculture and Technology
-NWMSCST,AGENCY,Northwestern Mindanao State College of Science and Technology
-DDNSC,AGENCY,Davao del Norte State College
-DOSCST,AGENCY,Davao Oriental State College of Science and Technology
-SPAMAST,AGENCY,Southern Philippines Agri-Business and Marine and Aquatic School of Technology
-USP,AGENCY,University of Southeastern Philippines
-CCSPC,AGENCY,Cotabato City State Polytechnic College
-CFCST,AGENCY,Cotabato Foundation College of Science and Technology
-SKPSC,AGENCY,Sultan Kudarat State University (Sultan Kudarat Polytechnic State College)
-USM,AGENCY,University of Southern Mindanao
-ADSSCAT,AGENCY,Agusan del Sur State College of Agriculture and Technology
-NMSIST,AGENCY,Caraga State University (Northern Mindanao State Institute of Science and Technology)
-SDSPSC,AGENCY,Surigao del Sur State University (Surigao del Sur Polytechnic State College)
-SSCT,AGENCY,Surigao State College of Technology
-AMPC,AGENCY,Adiong Memorial Polytechnic State College
-BASSC,AGENCY,Basilan State College
-MSU,AGENCY,Mindanao State University
-MSU-TCTO,AGENCY,MSU-Tawi-Tawi College of Technology and Oceanography
-SSC,AGENCY,Sulu State College
-TTRAC,AGENCY,Tawi-Tawi Regional Agricultural College
-OSEC-DOE,AGENCY,Office of the Secretary
-OSEC-DENR,AGENCY,Office of the Secretary
-EMB,AGENCY,Environmental Management Bureau
-MGB,AGENCY,Mines and Geo-Sciences Bureau
-NAMRIA,AGENCY,National Mapping and Resource Information Authority
-NWRB-DENR,AGENCY,National Water Resources Board
-PCSDS,AGENCY,Palawan Council for Sustainable Development Staff
-OSEC-DOF,AGENCY,Office of the Secretary
-BOC,AGENCY,Bureau of Customs
-BIR,AGENCY,Bureau of Internal Revenue
-BLGF,AGENCY,Bureau of Local Government Finance
-BTR,AGENCY,Bureau of the Treasury
-CBAA,AGENCY,Central Board of Assessment Appeals
-CDA-DOF,AGENCY,Cooperative Development Authority
-FIRB,AGENCY,Fiscal Incentives Review Board
-IC,AGENCY,Insurance Commission
-NTRC,AGENCY,National Tax Research Center
-PMO,AGENCY,Privatization and Management Office
-SEC,AGENCY,Securities and Exchange Commission
-OSEC-DFA,AGENCY,Office of the Secretary
-FSI,AGENCY,Foreign Service Institute
-TCCP,AGENCY,Technical Cooperation Council of the Philippines
-UNESCO,AGENCY,UNESCO National Commission of the Philippines
-OSEC-DOH,AGENCY,Office of the Secretary
-POPCOM-DOH,AGENCY,Commission on Population
-NNC-DOH,AGENCY,National Nutrition Council
-OSEC-DILG,AGENCY,Office of the Secretary
-BFP,AGENCY,Bureau of Fire Protection
-BJMP,AGENCY,Bureau of Jail Management and Penology
-LGA,AGENCY,Local Government Academy
-NAPOLCOM,AGENCY,National Police Commission
-PNP,AGENCY,Philippine National Police
-PPSC,AGENCY,Philippine Public Safety College
-OSEC-DOJ,AGENCY,Office of the Secretary
-BCOR,AGENCY,Bureau of Corrections
-BI,AGENCY,Bureau of Immigration
-COSLAP,AGENCY,Commission on the Settlement of Land Problems
-LRA,AGENCY,Land Registration Authority
-NBI,AGENCY,National Bureau of Investigation
-OGCC,AGENCY,Office of the Government Corporate Counsel
-OSG,AGENCY,Office of the Solicitor General
-PPA,AGENCY,Parole and Probation Administration
-PCGG-DOJ,AGENCY,Presidential Commission on Good Government
-PAO,AGENCY,Public Attorney's Office
-OSEC-DOLE,AGENCY,Office of the Secretary
-ILS,AGENCY,Institute for Labor Studies
-NCMB,AGENCY,National Conciliation and Mediation Board
-NLRC,AGENCY,National Labor Relations Commission
-NMP,AGENCY,National Maritime Polytechnic
-NWPC,AGENCY,National Wages and Productivity Commission
-POEA,AGENCY,Philippine Overseas Employment Administration
-PRC-DOLE,AGENCY,Professional Regulation Commission
-TESDA,AGENCY,Technical Education and Skills Development Authority
-OSEC-DND,AGENCY,DND Proper (Office of the Secretary)
-GA,AGENCY,Government Arsenal
-NDCP,AGENCY,National Defense College of the Philippines
-OCD,AGENCY,Office of Civil Defense
-AFP-PVAO,SUBAGENCY,Philippine Veterans Affairs Office (Proper)
-PVAO-VMMC,SUBAGENCY,Veterans Memorial Medical Center
-AFP-PSG,SUBAGENCY,Presidential Security Group
-AFP-PA,SUBAGENCY,Philippine Army (Land Forces)
-AFP-PAF,SUBAGENCY,Philippine Air Force (Air Force)
-AFP-RRAP,SUBAGENCY,Retirees and Reservists Affairs Program
-AFP-EB,SUBAGENCY,Exercise Balikatan
-AFP-PN,SUBAGENCY,Philippine Navy (Naval Forces)
-AFP-GHQ,SUBAGENCY,"General Headquarters, AFP and AFP Wide Service Support Units (AFPWSSUS)"
-OSEC-DPWH,AGENCY,Office of the Secretary
-OSEC-DOST,AGENCY,Office of the Secretary
-ASTI,AGENCY,Advanced Science and Technology Institute
-FNRI,AGENCY,Food and Nutrition Research Institute
-FPRDI,AGENCY,Forest Products Research and Development Institute
-ITDI,AGENCY,Industrial Technology Development Institute
-ICTO,AGENCY,Information and Communications Technology Office
-MIRDC,AGENCY,Metals Industry Research and Development Center
-NAST,AGENCY,National Academy of Science and Technology
-NRCP,AGENCY,National Research Council of the Philippines
-PAGASA,AGENCY,"Philippine Atmospheric, Geophysical and Astronomical Services Administration"
-PCAANRRD,AGENCY,"Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development"
-PCAFNRD,AGENCY,"Philippine Council for Agriculture, Forestry and Natural Resources Research and Development"
-PCAMRD,AGENCY,Philippine Council for Aquatic and Marine Research and Development
-PCHRD,AGENCY,Philippine Council for Health Research and Development
-PCIEERD,AGENCY,"Philippine Council for Industry, Energy and Emerging Technology Research and Development"
-PIVS,AGENCY,Philippine Institute of Volcanology and Seismology
-PNRI,AGENCY,Philippine Nuclear Research Institute
-PSHS,AGENCY,Philippine Science High School
-PTRI,AGENCY,Philippine Textile Research Institute
-SEI,AGENCY,Science Education Institute
-STII,AGENCY,Science and Technology Information Institute
-TAPI,AGENCY,Technology Application and Promotion Institute
-PCAST,AGENCY,Philippine Council for Advanced Science and Technology Research and Development
-PCIERD,AGENCY,Philippine Council for Industry and Energy Research and Development
-OSEC-DSWD,AGENCY,Office of the Secretary
-CWCY,AGENCY,Council for the Welfare of Children
-ICAB,AGENCY,Inter-Country Adoption Board
-NCWDP,AGENCY,National Council on Disability Affairs
-NYC-DSWD,AGENCY,National Youth Commission
-OSEC-DOT,AGENCY,Office of the Secretary
-IA,AGENCY,Intramuros Administration
-NPDC,AGENCY,National Parks Development Committee
-OSEC-DTI,AGENCY,Office of the Secretary
-BOI,AGENCY,Board of Investments
-CIAP,AGENCY,Construction Industry Authority of the Philippines
-CMDF,AGENCY,Construction Manpower Development Foundation
-PTTC,AGENCY,Philippine Trade Training Center
-PDDCP,AGENCY,Design Center of the Philippines
-OSEC-DOTC,AGENCY,Office of the Secretary
-CAB,AGENCY,Civil Aeronautics Board
-MARINA,AGENCY,Maritime Industry Authority
-OTC,AGENCY,Office of Transportation Cooperatives
-OTS,AGENCY,Office for Transportation Security
-PCG,AGENCY,Philippine Coast Guard
-TRB-DOTC,AGENCY,Toll Regulatory Board
-ODG,AGENCY,Office of the Director-General
-NSCB,AGENCY,National Statistical Coordination Board
-NSO,AGENCY,National Statistics Office
-PNVSCA,AGENCY,Philippine National Volunteer Service Coordinating Agency
-PPPCP,AGENCY,Public-Private Partnership Center of the Philippines
-SRTC,AGENCY,Statistical Research and Training Center
-TARIFF,AGENCY,Tariff Commission
-PROP,AGENCY,Presidential Communications Operations Office (Proper)
-BBS,AGENCY,Bureau of Broadcast Services
-BCS,AGENCY,Bureau of Communications Services
-NPO,AGENCY,National Printing Office
-NIB,AGENCY,News and Information Bureau
-PIA,AGENCY,Philippine Information Agency
-PBS-RTVM,AGENCY,Presidential Broadcast Staff (RTVM)
-AMLC,AGENCY,Anti-Money Laundering Council
-NCCC,AGENCY,Climate Change Commission
-CFO-OEO,AGENCY,Commission on Filipinos Overseas
-CHED,AGENCY,Commission on Higher Education
-CDA,AGENCY,Cooperative Development Authority
-CFL-OEO,AGENCY,Commission on the Filipino Language
-DDB-OEO,AGENCY,Dangerous Drugs Board
-ERC,AGENCY,Energy Regulatory Commission
-FDCP,AGENCY,Film Development Council of the Philippines
-GAAB,AGENCY,Games and Amusements Board
-GCG,AGENCY,Governance Commission for Government-Owned and Controlled Corporations
-HLURB,AGENCY,Housing and Land Use Regulatory Board
-HUDCC,AGENCY,Housing and Urban Development Coordinating Council
-MDA,AGENCY,Mindanao Development Authority
-MTRCB,AGENCY,Movie and Television Review and Classification Board
-NAPC,AGENCY,National Anti-Poverty Commission
-NCCA-PROPER,SUBAGENCY,National Commission for Culture and the Arts (Proper)
-NHI-NCCA,SUBAGENCY,National Historical Commission of the Philippines (National Historical Institute)
-NL-NCCA,SUBAGENCY,National Library of the Philippines
-RMAO-NCCA,SUBAGENCY,National Archives of the Philippines (formerly Records Management and Archives Office)
-NCIP,AGENCY,National Commission on Indigenous Peoples
-OMA,AGENCY,National Commission on Muslim Filipinos (Office on Muslim Affairs)
-NICA,AGENCY,National Intelligence Coordinating Agency
-NSC,AGENCY,National Security Council
-NTC-OEO,AGENCY,National Telecommunications Commission
-OPAPP,AGENCY,Office of the Presidential Adviser on the Peace Process
-VRB,AGENCY,Optical Media Board
-PRRC,AGENCY,Pasig River Rehabilitation Commission
-NCRFW,AGENCY,Philippine Commission on Women (National Commission on the Role of Filipino Women)
-PDEA,AGENCY,Philippine Drug Enforcement Agency
-PRACOM,AGENCY,Philippine Racing Commission
-PSCOM,AGENCY,Philippine Sports Commission
-PCUP,AGENCY,Presidential Commission for the Urban Poor
-PCDSPO,AGENCY,Presidential Communications Development and Strategic Planning Office
-PLLO,AGENCY,Presidential Legislative Liaison Office
-PMS,AGENCY,Presidential Management Staff
-ARMM,AGENCY,Autonomous Regional Government in Muslim Mindanao
-LEDAC,AGENCY,Legislative-Executive Development Advisory Council
-SCPLC,AGENCY,Supreme Court of the Philippines and the Lower Courts
-PET,SUBAGENCY,Presidential Electoral Tribunal
-SB,AGENCY,Sandiganbayan
-CAP,AGENCY,Court of Appeals
-CTA,AGENCY,Court of Tax Appeals
-CSCOM,AGENCY,Civil Service Commission
-CESB,SUBAGENCY,Career Executive Service Board
-COA,DEPARTMENT,Commission on Audit
-COMELEC,DEPARTMENT,Commission on Elections
-OMB,DEPARTMENT,Office of the Ombudsman
-CHR,DEPARTMENT,Commission on Human Rights
-NDA,SUBSPF,National Dairy Authority
-NFA,SUBSPF,National Food Authority
-NIA,SUBSPF,National Irrigation Administration
-NTA,SUBSPF,National Tobacco Administration
-PCOA,SUBSPF,Philippine Coconut Authority
-PCIC-DA,SUBSPF,Philippine Crop Insurance Corporation
-PRRI,SUBSPF,Philippine Rice Research Institute
-QUEDAN,SUBSPF,Quedan and Rural Credit Guarantee Corporation
-SRA,SUBSPF,Sugar Regulatory Administration
-NEA,SUBSPF,National Electrification Administration
-NPC,SUBSPF,National Power Corporation
-PCIC,SUBSPF,Philippine Crop Insurance Corporation
-PDIC,SUBSPF,Philippine Deposit Insurance Corporation
-LCP,SUBSPF,Lung Center of the Philippines
-NKTI,SUBSPF,National Kidney and Transplant Institute
-PCMC,SUBSPF,Philippine Children`s Medical Center
-PHC,SUBSPF,Philippine Heart Center
-PITAHC,SUBSPF,Philippine Institute of Traditional and Alternative Health Care
-LWUA,SUBSPF,Local Water Utilities Administration
-TPB,SUBSPF,Tourism Promotions Board
-PCVC,SUBSPF,Philippine Convention and Visitors Corporation
-ASEZA,SUBSPF,Aurora Pacific Economic Zone and Freeport Authority
-CITEM,SUBSPF,Center for International Trade Expositions and Missions
-CITC,SUBSPF,Cottage Industry Technology Center
-PNR,SUBSPF,Philippine National Railways
-PIDS,SUBSPF,Philippine Institute for Development Studies
-AFAB,SUBSPF,Authority of the Freeport Area of Bataan
-CEZA,SUBSPF,Cagayan Economic Zone Authority
-CIC,SUBSPF,Credit Information Corporation
-CCP,SUBSPF,Cultural Center of the Philippines
-DAP,SUBSPF,Development Academy of the Philippines
-HIGC,SUBSPF,Home Guaranty Corporation
-NHMFC,SUBSPF,National Home Mortgage Finance Corporation
-NHA,SUBSPF,National Housing Authority
-PCED,SUBSPF,Philippine Center for Economic Development
-PPC,SUBSPF,Philippine Postal Corporation
-SPDA,SUBSPF,Southern Philippines Development Authority
-ZCSEZA,SUBSPF,Zamboanga City Special Economic Zone Authority
-PCFC,SUBSPF,People's Credit and Finance Corporation
-SBSGC,SUBSPF,Budgetary Support to Government Corporations - Others
-NET,SUBSPF,Net Lending
-IRA,SUBSPF,Internal Revenue Allotment
-PNT,SUBSPF,Special Shares of Local Government Units in the Proceeds of National Taxes
-BODBF,SUBSPF,Barangay Officials Death Benefits Fund
-S_MMDA,SUBSPF,Metropolitan Manila Development Authority
-NHIP,SUBSPF,Premium Subsidy for Indigents under the National Health Insurance Program
-KSB,SUBSPF,Kalayaan Barangay Program Fund
-KILOS,SUBSPF,Kilos Asenso Support Fund
-MDF,SUBSPF,Municipal Development Fund
-FSLGU,SUBSPF,Local Government Support Fund (Formerly Financial Subsidy to Local Government Units)
-CF,SPF,Calamity Fund
-COF,SPF,Contingent Fund
-DECS-BEFP,SPF,Department of Education - School Building Program
-E-GOV,SPF,E-Government Fund
-ICF,SPF,International Commitments Fund
-MPBF,SPF,Miscellaneous Personnel Benefits Fund
-PAMANA,SPF,Payapa at Masaganang Pamayanan Fund
-PGF,SPF,Pension and Gratuity Fund
-PSEPF,SPF,Priority Social and Economic Projects Fund
-PDAF,SPF,Priority Development Assistance Fund
-TEF,SPF,Tax Expenditures Fund
-DSF,SPF,Debt Service Fund-Interest Payment
-UF,SPF,Unprogrammed Fund
-CAF,SPF,Compensation Adjustment Fund
-AFPMP,SPF,AFP  Modernization Program
-GFA,SPF,General Fund Adjustments
-NUF,SPF,National Unification Fund
+ARF,SPF,Agrarian Reform Fund,ARF
+SP,AGENCY,Senate,CONGRESS
+SET,SUBAGENCY,Senate Electoral Tribunal,CONGRESS
+CA,AGENCY,Commission on Appointments,CONGRESS
+HR,AGENCY,House of Representatives,CONGRESS
+HET,SUBAGENCY,House Electoral Tribunal,CONGRESS
+OP-PROPER,AGENCY,The President's Offices,OP
+OVP,DEPARTMENT,Office of the Vice-President,OVP
+OSEC-DAR,AGENCY,Office of the Secretary,DAR
+OSEC-DA,AGENCY,Office of the Secretary,DA
+ACPC,AGENCY,Agricultural Credit Policy Council,DA
+BFAR,AGENCY,Bureau of Fisheries and Aquatic Resources,DA
+CODA,AGENCY,Cotton Development Administration,DA
+FPA,AGENCY,Fertilizer and Pesticide Authority,DA
+FIDA,AGENCY,Fiber Industry Development Authority,DA
+LDC,AGENCY,Livestock Development Council,DA
+NAFC,AGENCY,National Agricultural and Fishery Council,DA
+NMIC,AGENCY,National Meat Inspection Service,DA
+NNC,AGENCY,National Nutrition Council,DA
+PCC,AGENCY,Philippine Carabao Center,DA
+BUPHIRE,AGENCY,Philippine Center for Postharvest Development and Mechanization,DA
+SRA-DA,AGENCY,Sugar Regulatory Administration,DA
+OSEC-DBM,AGENCY,Office of the Secretary,DBM
+GPPB-TSO,AGENCY,Government Procurement Policy Board - Technical Support Office,DBM
+OSEC-DECS,AGENCY,Office of the Secretary,DECS
+NBDB-DECS,AGENCY,National Book Development Board,DECS
+NCCT-DECS,AGENCY,National Council for Children's Television,DECS
+NM,AGENCY,National Museum,DECS
+PHSA,AGENCY,Philippine High School for the Arts,DECS
+EARIST,AGENCY,Eulogio 'Amang' Rodriguez Institute of Science and Technology,SUCS
+MAPC,AGENCY,Marikina Polytechnic College,SUCS
+PNU,AGENCY,Philippine Normal University,SUCS
+PSCA,AGENCY,Philippine State College of Aeronautics,SUCS
+PUP,AGENCY,Polytechnic University of the Philippines,SUCS
+RTC,AGENCY,Rizal Technological University,SUCS
+TUP,AGENCY,Technological University of the Philippines,SUCS
+UPS,AGENCY,University of the Philippines System,SUCS
+DMMMSU,AGENCY,Don Mariano Marcos Memorial State University,SUCS
+ISPSC,AGENCY,Ilocos Sur Polytechnic State College,SUCS
+MMSU,AGENCY,Mariano Marcos State University,SUCS
+NLPSC,AGENCY,North Luzon Philippines State College,SUCS
+PSU,AGENCY,Pangasinan State University,SUCS
+UNP,AGENCY,University of Northern Philippines,SUCS
+ASIST,AGENCY,Abra State Institute of Science and Technology,SUCS
+ASC,AGENCY,Apayao State College,SUCS
+BSU,AGENCY,Benguet State University,SUCS
+ISCAF,AGENCY,Ifugao State University,SUCS
+KASC,AGENCY,Kalinga-Apayao State College,SUCS
+MTPSPC,AGENCY,Mountain Province State Polytechnic College,SUCS
+BATSC,AGENCY,Batanes State College (Batanes Polytechnic College),SUCS
+CSU,AGENCY,Cagayan State University,SUCS
+ISU,AGENCY,Isabela State University,SUCS
+NVSU,AGENCY,Nueva Vizcaya State University ( NVSIT and NVSPC),SUCS
+QSC,AGENCY,Quirino State University,SUCS
+ASCOT,AGENCY,Aurora State College of Technology,SUCS
+BPSU,AGENCY,Bataan Peninsula State University,SUCS
+BPSC,AGENCY,Bataan Polytechnic State College,SUCS
+CLSU,AGENCY,Central Luzon State University,SUCS
+BULSU,AGENCY,Bulacan State University,SUCS
+BNASC,AGENCY,Bulacan Agricultural State College,SUCS
+DHVCAT,AGENCY,Don Honorio Ventura Technological State University (DHVCAT),SUCS
+NEUST,AGENCY,Nueva Ecija University of Science and Technology,SUCS
+PAC,AGENCY,Pampanga State Agricultural University,SUCS
+PMMA,AGENCY,Philippine Merchant Marine Academy,SUCS
+RMTU,AGENCY,Ramon Magsaysay Technological University,SUCS
+TCA,AGENCY,Tarlac College of Agriculture,SUCS
+TSU,AGENCY,Tarlac State University,SUCS
+BTSU,AGENCY,Batangas State University,SUCS
+CASU,AGENCY,Cavite State University,SUCS
+LSPC,AGENCY,Laguna State Polytechnic University (Laguna State Polytechnic College),SUCS
+SLPC,AGENCY,Southern Luzon State University (Southern Luzon Polytechnic College),SUCS
+URS,AGENCY,University of Rizal System,SUCS
+MSC,AGENCY,Marinduque State College,SUCS
+MSCAT,AGENCY,Mindoro State University,SUCS
+OMNC,AGENCY,Occidental Mindoro State College (Occidental Mindoro National College),SUCS
+PSC,AGENCY,Palawan State University,SUCS
+RSC,AGENCY,Romblon State University (Romblon State College),SUCS
+WPU,AGENCY,Western Philippines University,SUCS
+BU,AGENCY,Bicol University,SUCS
+CNSC,AGENCY,Camarines Norte State College,SUCS
+CSPC,AGENCY,Camarines Sur Polytechnic Colleges,SUCS
+CSSAC,AGENCY,Central Bicol State University of Agriculture  (Camarines Sur State Agricultural College),SUCS
+CATSC,AGENCY,Catanduanes State University,SUCS
+DEEMSCAT,AGENCY,"Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology",SUCS
+PARSC,AGENCY,Partido State University,SUCS
+SSTC,AGENCY,Sorsogon State College,SUCS
+ASU,AGENCY,Aklan State University,SUCS
+CAPSU,AGENCY,Capiz State University,SUCS
+CHMSC,AGENCY,Carlos C. Hilado Memorial State College,SUCS
+GSC,AGENCY,Guimaras State College,SUCS
+ISCOF,AGENCY,Iloilo State University of Science and Technology,SUCS
+NSCA,AGENCY,Central Philippines State University,SUCS
+NIPSC,AGENCY,Northern Iloilo  State University,SUCS
+NNSCST,AGENCY,Northern Negros State College of Science and Technology,SUCS
+POLSCAN,AGENCY,University of Antique (Polytechnic State College of Antique),SUCS
+WVCST,AGENCY,Iloilo Science and Technology University,SUCS
+WVSU,AGENCY,West Visayas State University,SUCS
+CNU,AGENCY,Cebu Normal University,SUCS
+CSCST,AGENCY,Cebu Technological University (Cebu State College of Science and Technology),SUCS
+CVSCAFT,AGENCY,"Bohol Island State University  (Central Visayas State College of Agr.,  Forestry and Tech.)",SUCS
+CVPC,AGENCY,Negros Oriental State University (Central Visayas Polytechnic College),SUCS
+SISC,AGENCY,Siquijor State College,SUCS
+ESSU,AGENCY,Eastern Samar State University,SUCS
+EVSU,AGENCY,Eastern Visayas State University (Leyte Institute of Technology),SUCS
+LNU,AGENCY,Leyte Normal University,SUCS
+VISCA,AGENCY,Visayas State University (Leyte State University),SUCS
+NIT,AGENCY,Naval State University (Naval Institute of Technology),SUCS
+PIT,AGENCY,Palompon Polytechnic State University,SUCS
+SLSU,AGENCY,Southern Leyte State University (Southern Leyte State College of Sci. and Tech. and TONC),SUCS
+SSCAF,AGENCY,Samar State College of Agriculture and Forestry,SUCS
+SSU,AGENCY,Samar State University (Samar State Polytechnic College),SUCS
+TIMIST,AGENCY,Northwest Samar State University (TTMIST and SSCAF),SUCS
+UEP,AGENCY,University of Eastern Philippines,SUCS
+JHCESC,AGENCY,J. H. Cerilles State College,SUCS
+JRMSC,AGENCY,Jose Rizal Memorial State University (Jose Rizal Memorial State College),SUCS
+WMSU,AGENCY,Western Mindanao State University,SUCS
+ZCSPC,AGENCY,Zamboanga City State Polytechnic College,SUCS
+ZSCMST,AGENCY,Zamboanga State College of Marine Sciences and Technology,SUCS
+BUKSC,AGENCY,Bukidnon State University,SUCS
+CPSC,AGENCY,Camiguin Polytechnic State College,SUCS
+CMU,AGENCY,Central Mindanao University,SUCS
+MPSC,AGENCY,Mindanao University of Science and Technology,SUCS
+MSU-IIT,AGENCY,MSU-Iligan Institute of Technology,SUCS
+MOSCAT,AGENCY,Misamis Oriental State College of Agriculture and Technology,SUCS
+NWMSCST,AGENCY,Northwestern Mindanao State College of Science and Technology,SUCS
+DDNSC,AGENCY,Davao del Norte State College,SUCS
+DOSCST,AGENCY,Davao Oriental State College of Science and Technology,SUCS
+SPAMAST,AGENCY,Southern Philippines Agri-Business and Marine and Aquatic School of Technology,SUCS
+USP,AGENCY,University of Southeastern Philippines,SUCS
+CCSPC,AGENCY,Cotabato City State Polytechnic College,SUCS
+CFCST,AGENCY,Cotabato Foundation College of Science and Technology,SUCS
+SKPSC,AGENCY,Sultan Kudarat State University (Sultan Kudarat Polytechnic State College),SUCS
+USM,AGENCY,University of Southern Mindanao,SUCS
+ADSSCAT,AGENCY,Agusan del Sur State College of Agriculture and Technology,SUCS
+NMSIST,AGENCY,Caraga State University (Northern Mindanao State Institute of Science and Technology),SUCS
+SDSPSC,AGENCY,Surigao del Sur State University (Surigao del Sur Polytechnic State College),SUCS
+SSCT,AGENCY,Surigao State College of Technology,SUCS
+AMPC,AGENCY,Adiong Memorial Polytechnic State College,SUCS
+BASSC,AGENCY,Basilan State College,SUCS
+MSU,AGENCY,Mindanao State University,SUCS
+MSU-TCTO,AGENCY,MSU-Tawi-Tawi College of Technology and Oceanography,SUCS
+SSC,AGENCY,Sulu State College,SUCS
+TTRAC,AGENCY,Tawi-Tawi Regional Agricultural College,SUCS
+OSEC-DOE,AGENCY,Office of the Secretary,DOE
+OSEC-DENR,AGENCY,Office of the Secretary,DENR
+EMB,AGENCY,Environmental Management Bureau,DENR
+MGB,AGENCY,Mines and Geo-Sciences Bureau,DENR
+NAMRIA,AGENCY,National Mapping and Resource Information Authority,DENR
+NWRB-DENR,AGENCY,National Water Resources Board,DENR
+PCSDS,AGENCY,Palawan Council for Sustainable Development Staff,DENR
+OSEC-DOF,AGENCY,Office of the Secretary,DOF
+BOC,AGENCY,Bureau of Customs,DOF
+BIR,AGENCY,Bureau of Internal Revenue,DOF
+BLGF,AGENCY,Bureau of Local Government Finance,DOF
+BTR,AGENCY,Bureau of the Treasury,DOF
+CBAA,AGENCY,Central Board of Assessment Appeals,DOF
+CDA-DOF,AGENCY,Cooperative Development Authority,DOF
+FIRB,AGENCY,Fiscal Incentives Review Board,DOF
+IC,AGENCY,Insurance Commission,DOF
+NTRC,AGENCY,National Tax Research Center,DOF
+PMO,AGENCY,Privatization and Management Office,DOF
+SEC,AGENCY,Securities and Exchange Commission,DOF
+OSEC-DFA,AGENCY,Office of the Secretary,DFA
+FSI,AGENCY,Foreign Service Institute,DFA
+TCCP,AGENCY,Technical Cooperation Council of the Philippines,DFA
+UNESCO,AGENCY,UNESCO National Commission of the Philippines,DFA
+OSEC-DOH,AGENCY,Office of the Secretary,DOH
+POPCOM-DOH,AGENCY,Commission on Population,DOH
+NNC-DOH,AGENCY,National Nutrition Council,DOH
+OSEC-DILG,AGENCY,Office of the Secretary,DILG
+BFP,AGENCY,Bureau of Fire Protection,DILG
+BJMP,AGENCY,Bureau of Jail Management and Penology,DILG
+LGA,AGENCY,Local Government Academy,DILG
+NAPOLCOM,AGENCY,National Police Commission,DILG
+PNP,AGENCY,Philippine National Police,DILG
+PPSC,AGENCY,Philippine Public Safety College,DILG
+OSEC-DOJ,AGENCY,Office of the Secretary,DOJ
+BCOR,AGENCY,Bureau of Corrections,DOJ
+BI,AGENCY,Bureau of Immigration,DOJ
+COSLAP,AGENCY,Commission on the Settlement of Land Problems,DOJ
+LRA,AGENCY,Land Registration Authority,DOJ
+NBI,AGENCY,National Bureau of Investigation,DOJ
+OGCC,AGENCY,Office of the Government Corporate Counsel,DOJ
+OSG,AGENCY,Office of the Solicitor General,DOJ
+PPA,AGENCY,Parole and Probation Administration,DOJ
+PCGG-DOJ,AGENCY,Presidential Commission on Good Government,DOJ
+PAO,AGENCY,Public Attorney's Office,DOJ
+OSEC-DOLE,AGENCY,Office of the Secretary,DOLE
+ILS,AGENCY,Institute for Labor Studies,DOLE
+NCMB,AGENCY,National Conciliation and Mediation Board,DOLE
+NLRC,AGENCY,National Labor Relations Commission,DOLE
+NMP,AGENCY,National Maritime Polytechnic,DOLE
+NWPC,AGENCY,National Wages and Productivity Commission,DOLE
+POEA,AGENCY,Philippine Overseas Employment Administration,DOLE
+PRC-DOLE,AGENCY,Professional Regulation Commission,DOLE
+TESDA,AGENCY,Technical Education and Skills Development Authority,DOLE
+OSEC-DND,AGENCY,DND Proper (Office of the Secretary),DND
+GA,AGENCY,Government Arsenal,DND
+NDCP,AGENCY,National Defense College of the Philippines,DND
+OCD,AGENCY,Office of Civil Defense,DND
+AFP-PVAO,SUBAGENCY,Philippine Veterans Affairs Office (Proper),DND
+PVAO-VMMC,SUBAGENCY,Veterans Memorial Medical Center,DND
+AFP-PSG,SUBAGENCY,Presidential Security Group,DND
+AFP-PA,SUBAGENCY,Philippine Army (Land Forces),DND
+AFP-PAF,SUBAGENCY,Philippine Air Force (Air Force),DND
+AFP-RRAP,SUBAGENCY,Retirees and Reservists Affairs Program,DND
+AFP-EB,SUBAGENCY,Exercise Balikatan,DND
+AFP-PN,SUBAGENCY,Philippine Navy (Naval Forces),DND
+AFP-GHQ,SUBAGENCY,"General Headquarters, AFP and AFP Wide Service Support Units (AFPWSSUS)",DND
+OSEC-DPWH,AGENCY,Office of the Secretary,DPWH
+OSEC-DOST,AGENCY,Office of the Secretary,DOST
+ASTI,AGENCY,Advanced Science and Technology Institute,DOST
+FNRI,AGENCY,Food and Nutrition Research Institute,DOST
+FPRDI,AGENCY,Forest Products Research and Development Institute,DOST
+ITDI,AGENCY,Industrial Technology Development Institute,DOST
+ICTO,AGENCY,Information and Communications Technology Office,DOST
+MIRDC,AGENCY,Metals Industry Research and Development Center,DOST
+NAST,AGENCY,National Academy of Science and Technology,DOST
+NRCP,AGENCY,National Research Council of the Philippines,DOST
+PAGASA,AGENCY,"Philippine Atmospheric, Geophysical and Astronomical Services Administration",DOST
+PCAANRRD,AGENCY,"Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development",DOST
+PCAFNRD,AGENCY,"Philippine Council for Agriculture, Forestry and Natural Resources Research and Development",DOST
+PCAMRD,AGENCY,Philippine Council for Aquatic and Marine Research and Development,DOST
+PCHRD,AGENCY,Philippine Council for Health Research and Development,DOST
+PCIEERD,AGENCY,"Philippine Council for Industry, Energy and Emerging Technology Research and Development",DOST
+PIVS,AGENCY,Philippine Institute of Volcanology and Seismology,DOST
+PNRI,AGENCY,Philippine Nuclear Research Institute,DOST
+PSHS,AGENCY,Philippine Science High School,DOST
+PTRI,AGENCY,Philippine Textile Research Institute,DOST
+SEI,AGENCY,Science Education Institute,DOST
+STII,AGENCY,Science and Technology Information Institute,DOST
+TAPI,AGENCY,Technology Application and Promotion Institute,DOST
+PCAST,AGENCY,Philippine Council for Advanced Science and Technology Research and Development,DOST
+PCIERD,AGENCY,Philippine Council for Industry and Energy Research and Development,DOST
+OSEC-DSWD,AGENCY,Office of the Secretary,DSWD
+CWCY,AGENCY,Council for the Welfare of Children,DSWD
+ICAB,AGENCY,Inter-Country Adoption Board,DSWD
+NCWDP,AGENCY,National Council on Disability Affairs,DSWD
+NYC-DSWD,AGENCY,National Youth Commission,DSWD
+OSEC-DOT,AGENCY,Office of the Secretary,DOT
+IA,AGENCY,Intramuros Administration,DOT
+NPDC,AGENCY,National Parks Development Committee,DOT
+OSEC-DTI,AGENCY,Office of the Secretary,DTI
+BOI,AGENCY,Board of Investments,DTI
+CIAP,AGENCY,Construction Industry Authority of the Philippines,DTI
+CMDF,AGENCY,Construction Manpower Development Foundation,DTI
+PTTC,AGENCY,Philippine Trade Training Center,DTI
+PDDCP,AGENCY,Design Center of the Philippines,DTI
+OSEC-DOTC,AGENCY,Office of the Secretary,DOTC
+CAB,AGENCY,Civil Aeronautics Board,DOTC
+MARINA,AGENCY,Maritime Industry Authority,DOTC
+OTC,AGENCY,Office of Transportation Cooperatives,DOTC
+OTS,AGENCY,Office for Transportation Security,DOTC
+PCG,AGENCY,Philippine Coast Guard,DOTC
+TRB-DOTC,AGENCY,Toll Regulatory Board,DOTC
+ODG,AGENCY,Office of the Director-General,NEDA
+NSCB,AGENCY,National Statistical Coordination Board,NEDA
+NSO,AGENCY,National Statistics Office,NEDA
+PNVSCA,AGENCY,Philippine National Volunteer Service Coordinating Agency,NEDA
+PPPCP,AGENCY,Public-Private Partnership Center of the Philippines,NEDA
+SRTC,AGENCY,Statistical Research and Training Center,NEDA
+TARIFF,AGENCY,Tariff Commission,NEDA
+PROP,AGENCY,Presidential Communications Operations Office (Proper),OPS
+BBS,AGENCY,Bureau of Broadcast Services,OPS
+BCS,AGENCY,Bureau of Communications Services,OPS
+NPO,AGENCY,National Printing Office,OPS
+NIB,AGENCY,News and Information Bureau,OPS
+PIA,AGENCY,Philippine Information Agency,OPS
+PBS-RTVM,AGENCY,Presidential Broadcast Staff (RTVM),OPS
+AMLC,AGENCY,Anti-Money Laundering Council,OEO
+NCCC,AGENCY,Climate Change Commission,OEO
+CFO-OEO,AGENCY,Commission on Filipinos Overseas,OEO
+CHED,AGENCY,Commission on Higher Education,OEO
+CDA,AGENCY,Cooperative Development Authority,OEO
+CFL-OEO,AGENCY,Commission on the Filipino Language,OEO
+DDB-OEO,AGENCY,Dangerous Drugs Board,OEO
+ERC,AGENCY,Energy Regulatory Commission,OEO
+FDCP,AGENCY,Film Development Council of the Philippines,OEO
+GAAB,AGENCY,Games and Amusements Board,OEO
+GCG,AGENCY,Governance Commission for Government-Owned and Controlled Corporations,OEO
+HLURB,AGENCY,Housing and Land Use Regulatory Board,OEO
+HUDCC,AGENCY,Housing and Urban Development Coordinating Council,OEO
+MDA,AGENCY,Mindanao Development Authority,OEO
+MTRCB,AGENCY,Movie and Television Review and Classification Board,OEO
+NAPC,AGENCY,National Anti-Poverty Commission,OEO
+NCCA-PROPER,SUBAGENCY,National Commission for Culture and the Arts (Proper),OEO
+NHI-NCCA,SUBAGENCY,National Historical Commission of the Philippines (National Historical Institute),OEO
+NL-NCCA,SUBAGENCY,National Library of the Philippines,OEO
+RMAO-NCCA,SUBAGENCY,National Archives of the Philippines (formerly Records Management and Archives Office),OEO
+NCIP,AGENCY,National Commission on Indigenous Peoples,OEO
+OMA,AGENCY,National Commission on Muslim Filipinos (Office on Muslim Affairs),OEO
+NICA,AGENCY,National Intelligence Coordinating Agency,OEO
+NSC,AGENCY,National Security Council,OEO
+NTC-OEO,AGENCY,National Telecommunications Commission,OEO
+OPAPP,AGENCY,Office of the Presidential Adviser on the Peace Process,OEO
+VRB,AGENCY,Optical Media Board,OEO
+PRRC,AGENCY,Pasig River Rehabilitation Commission,OEO
+NCRFW,AGENCY,Philippine Commission on Women (National Commission on the Role of Filipino Women),OEO
+PDEA,AGENCY,Philippine Drug Enforcement Agency,OEO
+PRACOM,AGENCY,Philippine Racing Commission,OEO
+PSCOM,AGENCY,Philippine Sports Commission,OEO
+PCUP,AGENCY,Presidential Commission for the Urban Poor,OEO
+PCDSPO,AGENCY,Presidential Communications Development and Strategic Planning Office,OEO
+PLLO,AGENCY,Presidential Legislative Liaison Office,OEO
+PMS,AGENCY,Presidential Management Staff,OEO
+ARMM,AGENCY,Autonomous Regional Government in Muslim Mindanao,AR
+LEDAC,AGENCY,Legislative-Executive Development Advisory Council,JLEC
+SCPLC,AGENCY,Supreme Court of the Philippines and the Lower Courts,JUD
+PET,SUBAGENCY,Presidential Electoral Tribunal,JUD
+SB,AGENCY,Sandiganbayan,JUD
+CAP,AGENCY,Court of Appeals,JUD
+CTA,AGENCY,Court of Tax Appeals,JUD
+CSCOM,AGENCY,Civil Service Commission,CSC
+CESB,SUBAGENCY,Career Executive Service Board,CSC
+COA,DEPARTMENT,Commission on Audit,COA
+COMELEC,DEPARTMENT,Commission on Elections,COMELEC
+OMB,DEPARTMENT,Office of the Ombudsman,OMB
+CHR,DEPARTMENT,Commission on Human Rights,CHR
+NDA,SUBSPF,National Dairy Authority,BSGC
+NFA,SUBSPF,National Food Authority,BSGC
+NIA,SUBSPF,National Irrigation Administration,BSGC
+NTA,SUBSPF,National Tobacco Administration,BSGC
+PCOA,SUBSPF,Philippine Coconut Authority,BSGC
+PCIC-DA,SUBSPF,Philippine Crop Insurance Corporation,BSGC
+PRRI,SUBSPF,Philippine Rice Research Institute,BSGC
+QUEDAN,SUBSPF,Quedan and Rural Credit Guarantee Corporation,BSGC
+SRA,SUBSPF,Sugar Regulatory Administration,BSGC
+NEA,SUBSPF,National Electrification Administration,BSGC
+NPC,SUBSPF,National Power Corporation,BSGC
+PCIC,SUBSPF,Philippine Crop Insurance Corporation,BSGC
+PDIC,SUBSPF,Philippine Deposit Insurance Corporation,BSGC
+LCP,SUBSPF,Lung Center of the Philippines,BSGC
+NKTI,SUBSPF,National Kidney and Transplant Institute,BSGC
+PCMC,SUBSPF,Philippine Children`s Medical Center,BSGC
+PHC,SUBSPF,Philippine Heart Center,BSGC
+PITAHC,SUBSPF,Philippine Institute of Traditional and Alternative Health Care,BSGC
+LWUA,SUBSPF,Local Water Utilities Administration,BSGC
+TPB,SUBSPF,Tourism Promotions Board,BSGC
+PCVC,SUBSPF,Philippine Convention and Visitors Corporation,BSGC
+ASEZA,SUBSPF,Aurora Pacific Economic Zone and Freeport Authority,BSGC
+CITEM,SUBSPF,Center for International Trade Expositions and Missions,BSGC
+CITC,SUBSPF,Cottage Industry Technology Center,BSGC
+PNR,SUBSPF,Philippine National Railways,BSGC
+PIDS,SUBSPF,Philippine Institute for Development Studies,BSGC
+AFAB,SUBSPF,Authority of the Freeport Area of Bataan,BSGC
+CEZA,SUBSPF,Cagayan Economic Zone Authority,BSGC
+CIC,SUBSPF,Credit Information Corporation,BSGC
+CCP,SUBSPF,Cultural Center of the Philippines,BSGC
+DAP,SUBSPF,Development Academy of the Philippines,BSGC
+HIGC,SUBSPF,Home Guaranty Corporation,BSGC
+NHMFC,SUBSPF,National Home Mortgage Finance Corporation,BSGC
+NHA,SUBSPF,National Housing Authority,BSGC
+PCED,SUBSPF,Philippine Center for Economic Development,BSGC
+PPC,SUBSPF,Philippine Postal Corporation,BSGC
+SPDA,SUBSPF,Southern Philippines Development Authority,BSGC
+ZCSEZA,SUBSPF,Zamboanga City Special Economic Zone Authority,BSGC
+PCFC,SUBSPF,People's Credit and Finance Corporation,BSGC
+SBSGC,SUBSPF,Budgetary Support to Government Corporations - Others,BSGC
+NET,SUBSPF,Net Lending,BSGC
+IRA,SUBSPF,Internal Revenue Allotment,ALGU
+PNT,SUBSPF,Special Shares of Local Government Units in the Proceeds of National Taxes,ALGU
+BODBF,SUBSPF,Barangay Officials Death Benefits Fund,ALGU
+S_MMDA,SUBSPF,Metropolitan Manila Development Authority,ALGU
+NHIP,SUBSPF,Premium Subsidy for Indigents under the National Health Insurance Program,ALGU
+KSB,SUBSPF,Kalayaan Barangay Program Fund,ALGU
+KILOS,SUBSPF,Kilos Asenso Support Fund,ALGU
+MDF,SUBSPF,Municipal Development Fund,ALGU
+FSLGU,SUBSPF,Local Government Support Fund (Formerly Financial Subsidy to Local Government Units),ALGU
+CF,SPF,Calamity Fund,CF
+COF,SPF,Contingent Fund,COF
+DECS-BEFP,SPF,Department of Education - School Building Program,DECS-BEFP
+E-GOV,SPF,E-Government Fund,E-GOV
+ICF,SPF,International Commitments Fund,ICF
+MPBF,SPF,Miscellaneous Personnel Benefits Fund,MPBF
+PAMANA,SPF,Payapa at Masaganang Pamayanan Fund,PAMANA
+PGF,SPF,Pension and Gratuity Fund,PGF
+PSEPF,SPF,Priority Social and Economic Projects Fund,PSEPF
+PDAF,SPF,Priority Development Assistance Fund,PDAF
+TEF,SPF,Tax Expenditures Fund,TEF
+DSF,SPF,Debt Service Fund-Interest Payment,DSF
+UF,SPF,Unprogrammed Fund,UF
+CAF,SPF,Compensation Adjustment Fund,CAF
+AFPMP,SPF,AFP  Modernization Program,AFPMP
+GFA,SPF,General Fund Adjustments,GFA
+NUF,SPF,National Unification Fund,NUF
