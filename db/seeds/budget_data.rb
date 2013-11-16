@@ -30,13 +30,12 @@ ActiveRecord::Base.transaction do
     (year, agency_code, area_code, code, description, ps, mooe, co, new_appropriation) = line
     owner = Owner.find_by_code(agency_code)
     area = Area.find_by_code(area_code)
-    item = GeneralAppropriation.find_or_create_by_year_and_code(year, code)
+    item = GeneralAppropriation.find_or_create_by_year_and_code_and_new_appropriation(year, code, new_appropriation)
     item.assign_attributes({
                                description: description,
                                budget_ps: ps,
                                budget_mooe: mooe,
                                budget_co: co,
-                               new_appropriation: new_appropriation,
                                owner: owner,
                                area: area}, without_protection: true)
     item.save!
