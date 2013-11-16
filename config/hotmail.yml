@@ -1,0 +1,12 @@
+development:
+  app_id: 00000000480FA81E
+  app_secret: -DPwvkaE-ADvBAeT46R7ZFpjmmFDjXvH
+test:
+  app_id: 00000000480FA81E
+  app_secret: -DPwvkaE-ADvBAeT46R7ZFpjmmFDjXvH
+staging:
+  app_id: 00000000480FA81E
+  app_secret: -DPwvkaE-ADvBAeT46R7ZFpjmmFDjXvH
+production:
+  app_id: 000000004C0F5E02
+  app_secret: YmN7yY8dF4tHVdWqECE0RCbLUM-y9KBC

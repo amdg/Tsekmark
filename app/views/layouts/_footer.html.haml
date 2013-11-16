@@ -1,0 +1,27 @@
+#footer
+  .container
+    .row-fluid
+      %p.credit
+        .span12
+          .span2{:style => "width: 15%;"}
+            %ul.unstyled
+              %li
+                %a{:href => "#"} About us
+              %li
+                %a{:href => "#"} FAQ
+              %li
+                %a{:href => "#"} Pricing
+          .span2{:style => "width: 15%;"}
+            %ul.unstyled
+              %li
+                %a{:href => "#"} Blog
+              %li
+                %a{:href => "#"} Privacy Policy
+              %li
+                %a{:href => "#"} Terms of Service
+          - if user_signed_in?
+            .span4.pull-right.white
+              - label = current_user.business.present? ? "Manage #{current_user.business.name}" : "List Your Business"
+              = link_to label, business_edit_path, class: 'btn btn-large btn-info'
+      %hr/
+      %p.muted.pull-center © Interoctavo, LLC || Tsekmark 2013. All rights reserved

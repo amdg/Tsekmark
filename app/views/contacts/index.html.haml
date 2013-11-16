@@ -1,0 +1,23 @@
+%h1
+  Address Book
+  .pull-right
+    = render partial: "contacts/importer_buttons"
+%hr
+- if @contacts.length > 0
+  .well
+    %table.table.table-striped
+      %thead
+        %tr
+          %th
+            %input{ type: 'checkbox', class: 'checkall'}
+          %th Name
+          %th Email Address
+      %tbody
+        - @contacts.each do |c|
+          %tr
+            %td
+              %input{ type: 'checkbox', name: 'contacts[]', value: c.id }
+            %td= c.name
+            %td= c.email
+- else
+  = render partial: "layouts/empty"

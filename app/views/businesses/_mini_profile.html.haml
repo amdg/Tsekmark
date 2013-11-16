@@ -1,0 +1,27 @@
+- content_for :mini_profile do
+  = render partial: 'starburst' if @biz.verified?
+  .well
+    .row
+      %section
+        .span1.thumbnail
+          =image_tag @biz.photo.url(:thumb)
+        .span3
+          = render partial: 'following', :locals => { biz: @biz } unless viewer_is_biz_owner?(@biz)
+
+          %p.lead
+            = @biz.name
+
+          %small= "#{@biz.address1} #{@biz.address2}"
+          %small= @biz.email
+
+  .well
+    %p.pull-right
+      %a{:href => "#"} see all
+    %h4
+      Patrons
+      %small (#{@biz.followers.length})
+    %hr
+    %div
+      - for patron in @biz.followers
+        = link_to patron, :title=>patron.name do
+          =image_tag patron.photo.url(:thumb), class: 'img-circle'

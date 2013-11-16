@@ -1,0 +1,40 @@
+.span8
+  %h1
+    = "#{@provider.titleize} Contacts"
+    .pull-right
+      = render partial: 'contacts/importer_buttons'
+  %hr
+- if @contacts.length > 0
+  .span8
+    = form_for :contacts, url: contacts_save_path do |f|
+      .btn-toolbar
+        %button.btn.btn-primary
+          %i.icon-plus
+          Import Selected
+      .well
+
+        %table.table.table-striped
+          %thead
+            %tr
+              %th
+                %input{ type: 'checkbox', class: 'checkall'}
+              %th First Name
+              %th Last Name
+              %th Email Address
+          %tbody
+            - @contacts.each do |c|
+              - if !c[:email].blank? && !c[:first_name].blank?
+                %tr
+                  %td
+                    -#- contact = {name: "#{c[:first_name]} #{c[:last_name]}", email: c[:email], provider_uid: c[:id]}
+                    - contact = "#{c[:first_name]} #{c[:last_name]}|#{c[:email]}|#{@provider}"
+                    %input{ type: 'checkbox', name: 'contacts[]', value: Marshal.dump(contact) }
+                  %td= c[:first_name]
+                  %td= c[:last_name]
+                  %td= c[:email]
+      .btn-toolbar
+        %button.btn.btn-primary
+          %i.icon-plus
+          Import Selected
+- else
+  = render partial: "layouts/empty"

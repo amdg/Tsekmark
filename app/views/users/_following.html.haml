@@ -1,0 +1,7 @@
+- already_following = current_user == user || blaster.following?(user)
+%span{ class: "pull-right badge badge-#{already_following ? 'important' : 'info'}" }
+  %small
+    - if already_following
+      = link_to "Unfollow", unfollow_path('user',user.id), :method => :delete
+    - else
+      = link_to "Follow", follow_path('user',user.id), :method => :post

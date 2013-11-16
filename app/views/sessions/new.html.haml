@@ -1,0 +1,22 @@
+
+.row-fluid
+  .span12
+    .span6
+      %h1 Sign In
+      %hr
+      .area
+        = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+          .form-inputs
+            = f.input :email, :required => false, :autofocus => true
+            = f.input :password, :required => false
+            = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
+          .form-actions
+            = f.button :submit, "Sign in"
+            - if devise_mapping.recoverable? && controller_name != 'passwords'
+              .pull-right.small
+                = link_to "Forgot your password?", new_password_path(resource_name)
+    .span6.well
+      .area
+        .heading
+          %h3.form-heading Don't have an account?
+        = render "devise/shared/links"

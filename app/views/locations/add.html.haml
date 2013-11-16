@@ -1,0 +1,6 @@
+.well.span6.offset3
+  %h3 Please specify your city
+  = simple_form_for :location do |f|
+    = f.input :location, :required => true, label: false, input_html: { id: 'city-typeahead', class: 'typeahead', placeholder: 'Type in your city'}
+    %input{ type: 'hidden', name: 'selected_location', id: 'location_id'}
+    = f.button :submit, "Save", class: 'btn btn-info'

@@ -1,0 +1,6 @@
+.row
+  = render partial: 'locations/map', :locals => { location: @user.location }
+.row
+  = render partial: 'blasts/list', :locals => { blasts: @user.blasts, show_location: true, show_user: false }
+
+= render partial: 'mini_profile'

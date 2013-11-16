@@ -1,0 +1,25 @@
+.row-fluid
+  .span12
+    .span6
+      %h1 Sign Up
+      %hr
+      .area
+        = simple_form_for(User.new, :as => resource_name, :url => registration_path(resource_name), class: 'form-horizontal', html: {multipart: true}) do |f|
+          = f.error_notification
+          .form-inputs
+            %fieldset
+              = f.input :email, :required => true, :autofocus => true
+              = f.input :first_name, :required => true
+              = f.input :last_name, :required => true
+              = f.input :location, :required => true, input_html: { id: 'city-typeahead', placeholder: 'Your city'}
+              %input{ type: 'hidden', name: 'selected_location', id: 'location_id'}
+              = f.input :photo, :as => :file, label: 'Your most recent photo'
+              = f.input :password, :required => true
+              = f.input :password_confirmation, :required => true
+          .form-actions
+            = f.button :submit, "Sign up"
+    .span6.well
+      .area
+        .heading
+          %h3.form-heading Already have an account?
+        = render "devise/shared/links"

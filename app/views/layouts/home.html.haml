@@ -1,0 +1,52 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      %title= content_for?(:title) ? yield(:title) : "Tsekmark"
+      %meta{:content => content_for?(:description) ? yield(:description) : "Tsekmark", :name => "description"}
+        = stylesheet_link_tag "application", :media => "all"
+        /[if lt IE 8]
+          = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
+        = javascript_include_tag "application"
+        = csrf_meta_tags
+        = yield(:head)
+  %body{:class => "#{controller_name} #{action_name}"}
+    #wrap
+      = render 'layouts/navigation'
+      .container
+        = render 'layouts/messages'
+        .row.jumbotron
+          .span12
+            .hero-unit
+              %h1
+                Simple yet powerful solutions for your Small Business.
+              %p
+                Stay connected to your customers and attract new ones with social and local marketing tools designed for small businesses like yours.
+              %p
+                = link_to 'Sign up', new_user_registration_path, class: 'btn btn-primary btn-large'
+        .row
+          .span6
+            %h4
+              Customer List Management
+            %p
+              All your customers in one, EASY to manage place.
+
+          .span6
+            %h4
+              Business Profile Page
+            %p
+              Maintain your own profile page, equipped with social and local features to help disseminate your company message.
+
+          .span6
+            %h4
+              Lead Generation
+            %p
+              Convert prospective customers to real customers using our Lead Generation tools.
+          .span6
+            %h4
+              Local Sense
+            %p
+              View into activities across the geographies near your business.
+      #push
+    = render partial: 'layouts/footer'
+    = render partial: 'layouts/page_specific_js'

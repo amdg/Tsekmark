@@ -1,0 +1,38 @@
+- content_for :mini_profile do
+
+  .span4.well
+    .row
+      .span1
+        =image_tag @user.photo.url(:thumb)
+      .span3
+        = render partial: 'following', :locals => { user: @user } unless viewer_is_same_user?(@user)
+        %p.lead
+          = @user.full_name
+        %small= @user.email
+
+  .span4.well
+    .page-header
+      %p.pull-right
+        %a{:href => "#"} see all
+      %h4
+        Following
+        %small (#{@user.followers_count})
+    %div
+      - for following in @user.all_following
+        .span1
+          = link_to following, :title=>following.name do
+            =image_tag following.photo.url(:thumb), class: 'img-circle'
+
+
+  .span4.well
+    .page-header
+      %p.pull-right
+        %a{:href => "#"} see all
+      %h4
+        Followers
+        %small (#{@user.followers.length})
+    %div
+      - for follower in @user.followers
+        .span1
+          %a{:href => "#"}
+            =image_tag follower.photo.url(:thumb), class: 'img-circle'

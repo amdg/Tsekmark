@@ -1,0 +1,35 @@
+.sidebar-nav
+  .well{:style => "padding: 8px 0;"}
+    %ul.nav.nav-list
+      %li.nav-header Menu
+      %li
+        = link_to dashboard_index_path do
+          %i.icon-home
+          Dashboard
+      %li
+        = link_to conversations_path do
+          %i.icon-envelope
+          Conversations
+          -#%span.badge.badge-info 4
+      %li
+        = link_to followings_path do
+          %i.icon-bookmark
+          Following
+      %li
+        = link_to followers_path do
+          %i.icon-group
+          = followers_text
+      %li
+        = link_to contacts_index_path do
+          %i.icon-book
+          Address Book
+      %li.divider
+      %li
+        = link_to edit_blaster_path do
+          %i.icon-cog
+          Settings
+      %li
+        = link_to destroy_user_session_path, :method=>'delete' do
+          %i.icon-off
+          Logout
+

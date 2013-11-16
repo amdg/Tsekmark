@@ -1,0 +1,43 @@
+%h1
+  Edit Account
+%hr
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, multipart: true }) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :email, :required => true, :autofocus => true
+    = f.input :first_name, :required => true
+    = f.input :last_name, :required => true
+    = f.input :photo, :as => :file, label: 'Your most recent photo'
+    = f.input :location, :required => true, input_html: { id: 'city-typeahead', value: f.object.location.nil? ? '' : f.object.location.combined }
+    %input{ type: 'hidden', name: 'selected_location', id: 'location_id', value: resource.location.id}
+    - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+      %p
+        Currently waiting confirmation for: #{resource.unconfirmed_email}
+
+    - if current_user.encrypted_password.blank?
+      %span.badge.badge-important WARNING: You haven't set your password yet. It is important that you specify one.
+    = f.input :password, :autocomplete => "off", :hint => "leave it blank if you don't want to change it", :required => false, label: 'New Password'
+    = f.input :password_confirmation, :required => false, label: 'New Password Confirmation'
+    - if current_user.encrypted_password.blank?
+    - else
+      = f.input :current_password, :hint => "we need your current password to confirm your changes", :required => true
+  .form-actions
+    = f.button :submit, "Update"
+
+%h3.row-header Connections
+.row
+  - User.omniauth_providers.each do |provider|
+    %span.span3
+      - provider_auth = current_user.send("#{provider}_auth")
+      - if provider_auth
+        = link_to authentication_path(provider_auth.id), method: 'delete', class: "btn btn-xlarge btn-danger btn-#{provider.to_s}" do
+          %i{class: "icon-#{provider}"} | Disconnect #{provider.to_s.titleize}
+      - else
+        = link_to omniauth_authorize_path(User, provider), class: "btn btn-xlarge btn-info btn-#{provider.to_s}" do
+          %i{class: "icon-#{provider}"} | Connect #{provider.to_s.titleize}
+
+
+%h3.row-header Cancel my account
+%p
+  Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete}.
+= link_to "Back", :back

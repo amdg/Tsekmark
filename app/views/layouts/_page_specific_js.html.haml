@@ -1,0 +1,11 @@
+= javascript_tag do
+  = "google.maps.event.addDomListener(window, 'load', com.tsekmark.views.locations.loadMap);"
+  $(document).on("ready", function() {
+  = "com.tsekmark.init();"
+  = "if (!!com.tsekmark.views.#{controller_namespace}) { com.tsekmark.views.#{controller_namespace}.init(); } " if controller_namespace
+  = "if (!!com.tsekmark.views.#{namespaced_controller_name}) { com.tsekmark.views.#{namespaced_controller_name}.init(); }"
+  });
+
+
+
+

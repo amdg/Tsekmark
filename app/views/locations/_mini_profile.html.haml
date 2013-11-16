@@ -1,0 +1,30 @@
+- content_for :mini_profile do
+  .well
+    .row
+      .span3
+        %h5.lead
+          %i.icon-map-marker
+          = @location.combined
+
+  .well
+    %p.pull-right
+      %a{:href => "#"} see all
+    %h4
+      Businesses
+      %small (#{@location.businesses.length})
+    %hr
+    %div
+      - for biz in @location.businesses.first(9)
+        %a{:href => business_path(biz), :title=>biz.name}
+          =image_tag biz.photo.url(:thumb), class: 'img-circle'
+  .well
+    %p.pull-right
+      %a{:href => "#"} see all
+    %h4
+      People
+      %small (#{@location.users.length})
+    %hr
+    %div
+      - for person in @location.users.first(9)
+        %a{:href => user_path(person), :title=>person.full_name}
+          =image_tag person.photo.url(:thumb), class: 'img-circle'

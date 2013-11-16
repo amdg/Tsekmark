@@ -1,0 +1,14 @@
+#compose-message.modal.hide.fade
+  = form_for :message, remote: true, url: messages_path do |f|
+    .modal-header
+      %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+      %h3 Compose Message
+    .modal-body
+      = f.text_field :follower, id: 'follower-typeahead', class: 'typeahead', placeholder: 'Follower...'
+      = f.text_field :subject, class: 'span6', placeholder: 'Subject...'
+      = f.text_area :body, class: 'span6', placeholder: "Message...", rows: 3
+      = f.hidden_field :recipient_id
+      = f.hidden_field :recipient_type
+    .modal-footer
+      %a.btn{:href => "#", "data-dismiss" => "modal"} Close
+      %button.btn.btn-primary{id: 'send_message'} Send

@@ -1,0 +1,12 @@
+development:
+  app_id: 876093654194-5fj9rlv9t4sv8ni9sttvk418hcsv6fen.apps.googleusercontent.com
+  app_secret: fcNzFLJ72impc8WYWTynsWof
+test:
+  app_id: 876093654194.apps.googleusercontent.com
+  app_secret: WHRWWYfIOleOeehYjtFs0sLM
+staging:
+  app_id: 876093654194.apps.googleusercontent.com
+  app_secret: WHRWWYfIOleOeehYjtFs0sLM
+production:
+  app_id: 876093654194.apps.googleusercontent.com
+  app_secret: WHRWWYfIOleOeehYjtFs0sLM

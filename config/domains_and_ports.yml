@@ -1,0 +1,17 @@
+test:
+  default_host: localhost
+  http: 3333
+  https: 3333
+
+development:
+  default_host: localhost
+#  default_host: damp-wildwood-1128.herokuapp.com
+  http: 8080
+  https: 8080
+
+staging:
+  default_host: staging.tsekmark.com
+
+production:
+#  default_host: tsekmark.com
+  default_host: http://ec2-23-20-85-103.compute-1.amazonaws.com/

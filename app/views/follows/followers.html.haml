@@ -1,0 +1,9 @@
+%h1= followers_text
+%hr
+- if @followers.length > 0
+  - @followers.each do |follower|
+    .span1
+      = link_to follower, :title=>follower.name do
+        = image_tag follower.photo.url(:thumb), class: 'img-circle'
+- else
+  = render partial: "layouts/empty"

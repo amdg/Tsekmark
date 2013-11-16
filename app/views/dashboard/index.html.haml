@@ -1,0 +1,5 @@
+.span7
+  .row
+    = render partial: 'blasts/form', :locals => { size: 'original'}
+  .row
+    = render partial: 'blasts/list', :locals => { blasts: @blasts, show_location: true, show_user: true }

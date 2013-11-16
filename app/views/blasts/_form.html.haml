@@ -1,0 +1,9 @@
+.well
+  = form_for Blast.new, :action => blasts_path, :method => "POST" do |f|
+    = f.text_area :body, class: 'span6', placeholder: "Share what's going on", rows: 3
+    - if @location
+      = f.hidden_field :location, value: @location.id
+    %p.pull-right
+      %small.muted <span id="chr_counter">240</span> characters remaining
+    %button#post-blast.btn.btn-info.btn-large{:type => "submit"}
+      Blast

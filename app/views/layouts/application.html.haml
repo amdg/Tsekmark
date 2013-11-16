@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      %title= content_for?(:title) ? yield(:title) : "Tsekmark"
+      %meta{:content => content_for?(:description) ? yield(:description) : "Tsekmark", :name => "description"}
+        = stylesheet_link_tag "application", :media => "all"
+        /[if lt IE 8]
+          = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
+        = javascript_include_tag "application"
+        = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+
+        = csrf_meta_tags
+        = yield(:head)
+  %body{:class => "#{controller_name} #{action_name}"}
+    #wrap
+      = render 'layouts/navigation'
+      #main{:role => "main"}
+        .container
+          .row
+            = render 'layouts/messages'
+            - if user_signed_in?
+              .span3
+                = render :partial => 'layouts/sidebar'
+            %div{class: user_signed_in? ? 'span9' : 'span12'}
+              = yield
+
+        / ! end of .container
+
+      #push
+      / ! end of #main
+    = render partial: 'layouts/footer'
+
+    = render partial: 'layouts/page_specific_js'
