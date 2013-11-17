@@ -15,7 +15,7 @@ class Vote < ActiveRecord::Base
   TYPE_DOWNVOTE = 2
 
   entity :id, :comment, :vote_type, :medium_photo, :thumb_photo do
-    expose :user, :using => User::Entity
+    #expose :user, :using => User::Entity
     #expose :general_appropriation, :using => GeneralAppropriation::Entity
   end
 
