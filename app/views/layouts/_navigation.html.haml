@@ -20,33 +20,18 @@
             %a{:href => "/regions"}
               %i.icon-map-marker.icon-white
               Regions
-        -#- if user_signed_in?
-        -#  %ul.nav.pull-right
-        -#    %li
-        -#      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-        -#        Welcome, #{blaster.name}
-        -#        %b.caret
-        -#      %ul
-        -#        %li
-        -#          = link_to edit_blaster_path do
-        -#            %i.icon-cog
-        -#            Settings
-        -#        %li
-        -#          %a{:href => "#"}
-        -#            %i.icon-envelope
-        -#            Contact Support
-        -#        %li.divider
-        -#        %li
-        -#          = link_to destroy_user_session_path, :method=>'delete' do
-        -#            %i.icon-off
-        -#            Logout
-        -#- else
-        -#  %ul.nav.pull-right
-        -#    %li
-        -#      = link_to new_user_session_path do
-        -#        %i.icon-on
-        -#        Login
-        -#    %li
-        -#      = link_to new_user_registration_path do
-        -#        %i.icon-on
-        -#        Sign up
+        - if user_signed_in?
+          %li.pull-right
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Welcome, #{blaster.name}
+              %b.caret
+        - else
+          %ul.nav.pull-right
+            %li
+              = link_to new_user_session_path do
+                %i.icon-on
+                Login
+            %li
+              = link_to new_user_registration_path do
+                %i.icon-on
+                Sign up

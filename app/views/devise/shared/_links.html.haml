@@ -16,7 +16,7 @@
     .span8.pull-center
       - resource_class.omniauth_providers.each do |provider|
         = link_to omniauth_authorize_path(User, provider), class: "btn btn-large btn-info btn-#{provider.to_s}", style: 'margin-bottom: 20px;' do
-          %i{class: "icon-#{provider}"} | Sign in with #{provider.to_s.titleize}
+          Sign in with #{provider.to_s.titleize}
 
 
 

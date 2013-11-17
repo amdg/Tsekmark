@@ -2,7 +2,8 @@ require 'api'
 
 Tsekmark::Application.routes.draw do
   authenticated :user do
-    root :to => 'dashboard#index'
+    #root :to => 'dashboard#index'
+    root :to => 'sectors#index'
   end
 
   devise_for :users, :controllers => {:sessions => "sessions", :omniauth_callbacks => "users/omniauth_callbacks", :registrations => "users/registrations" }
