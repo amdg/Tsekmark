@@ -21,7 +21,14 @@ module Gas
         response = search_client.search(options)
         result = response['hits']
         map_key = params[:fields] ? 'fields' : '_source'
-        { total: result['total'], from: params[:from] || 0, result: result['hits'].map { |hit| hit[map_key] } }
+        { total: result['total'], from: params[:from] || 0, result: result['hits'].map { |hit|
+          source = hit[map_key]
+          if current_user then
+            v = Vote.find_by_user_id_and_general_appropriation_id(current_user.id, source['budget_id'])
+            source['vote'] = v ? v.vote_type : nil
+          end
+          source
+        } }
       end
     end
   end
