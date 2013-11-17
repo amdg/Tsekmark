@@ -33,7 +33,7 @@ com.tsekmark.views.sectors = {
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
-      node.append("a").attr("href", function(d) { return "departments/"+ d.id; });
+      node.append("a").attr("href", function(d) { return "sectors/"+ d.id; });
 
       d3.selectAll("button").on("click", function change() {
 

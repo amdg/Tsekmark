@@ -1,5 +1,6 @@
 class SectorsController < ApplicationController
   layout 'clean'
+
   def index
 
   end
@@ -12,43 +13,35 @@ class SectorsController < ApplicationController
   end
 
   def list
-    @sectors = {
-        name: "Sectors",
-        children: [
-            {
-                name: "Social Services",
-                children: [
-                    {id: 1, name: "Social Services", upvotes: 3123, size: 39323, downvotes: 323, buzz: 25, count: 1000}
-                ]
-            },
-            {
-                name: "General Public Service",
-                children: [
-                    {id: 2, name: "General Public Service", upvotes: 350, size: 3432938, downvotes: 36, buzz: 8, count: 1500}
-                ]
-            },
-            {
-                name: "Debt Burden",
-                children: [
-                    {id: 3, name: "Debt Burden", upvotes: 30, size: 343338, downvotes: 563, buzz: 55, count: 2000}
-                ]
-            },
-            {
-                name: "Defense",
-                children: [
-                    {id: 4, name: "Defense", upvotes: 150, size: 393238, downvotes: 78, buzz: 1, count: 800}
-                ]
-            },
-            {
-                name: "Economic Services",
-                children: [
-                    {id: 5, name: "Economic Services", upvotes: 250, size: 543938, downvotes: 383, buzz: 99, count: 1200}
-                ]
-            }
-        ]
+    known_sectors = {
+        'D' => 'Defense',
+        'DS' => 'Debt Service Payments',
+        'ES' => 'Economic Services',
+        'GPS' => 'General Public Services',
+        'L' => 'Lending',
+        'SS' => 'Social Services',
+        'U' => 'Unknown'
     }
+    sector_data = known_sectors.inject([]) do |hash, sector|
+      (sector_code, sector_name) = sector
+      result = GeneralAppropriation.joins(:owner).where('owners.sector_code' => sector_code)
+      size = result.sum(:budget_ps) + result.sum(:budget_mooe) + result.sum(:budget_co)
+      count = result.count
 
-    render json: @sectors
+      hash << {name: sector_name, children: [
+          {
+              id: sector_code,
+              name: sector_name,
+              upvotes: Forgery(:basic).number(:at_least => 250, :at_most => 800),
+              size: size,
+              downvotes: Forgery(:basic).number(:at_least => 250, :at_most => 800),
+              buzz: Forgery(:basic).number(:at_least => 2, :at_most => 25)
+          }
+
+      ]}
+    end
+
+    render json: {name: 'Sectors', children: sector_data}
   end
 
 end
