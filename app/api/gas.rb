@@ -23,6 +23,8 @@ module Gas
         map_key = params[:fields] ? 'fields' : '_source'
         { total: result['total'], from: params[:from] || 0, result: result['hits'].map { |hit|
           source = hit[map_key]
+          source['upvotes'] = Vote.where(general_appropriation_id: source['budget_id'], vote_type: 1).count
+          source['downvotes'] = Vote.where(general_appropriation_id: source['budget_id'], vote_type: 2).count
           if current_user then
             v = Vote.find_by_user_id_and_general_appropriation_id(current_user.id, source['budget_id'])
             source['vote'] = v ? v.vote_type : nil
