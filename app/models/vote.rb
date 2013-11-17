@@ -16,7 +16,7 @@ class Vote < ActiveRecord::Base
 
   entity :id, :comment, :vote_type, :medium_photo, :thumb_photo do
     expose :user, :using => User::Entity
-    expose :general_appropriation, :using => GeneralAppropriation::Entity
+    #expose :general_appropriation, :using => GeneralAppropriation::Entity
   end
 
   def medium_photo
