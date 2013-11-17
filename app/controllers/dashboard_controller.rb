@@ -4,9 +4,4 @@ class DashboardController < ApplicationController
   def index
     @blasts = []
   end
-
-  def switch
-    switch_context!
-    redirect_to params[:redirect_path] || root_path
-  end
 end

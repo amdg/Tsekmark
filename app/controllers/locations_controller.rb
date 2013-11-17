@@ -1,6 +1,5 @@
 class LocationsController < ApplicationController
 
-  skip_before_filter :redirect_to_add_location
   before_filter :load_location, :only => :show
 
   def index

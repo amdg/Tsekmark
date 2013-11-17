@@ -20,7 +20,6 @@ class ApplicationController < ActionController::Base
   end
 
   before_filter :initialize_flashes
-  before_filter :redirect_to_add_location
 
   helper_method :controller_namespace, :namespaced_controller_name, :user_context?,
                 :biz_context?, :context, :edit_blaster_path, :blaster
@@ -84,9 +83,5 @@ class ApplicationController < ActionController::Base
 
   def edit_blaster_path
     biz_context? ? business_edit_path : edit_user_registration_path
-  end
-
-  def redirect_to_add_location
-    redirect_to locations_add_path and return if user_signed_in? && current_user.location.blank?
   end
 end
