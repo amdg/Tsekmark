@@ -44,7 +44,7 @@ module Votes
         # Paperclip does not interpret a Hashie object from Grape/Rack
         # so instantiate it as a ActionDispatch::Http::UploadedFile
         vote_params[:photo] = ActionDispatch::Http::UploadedFile.new(vote_params[:photo]) if vote_params[:photo]
-        vote = Vote.new vote_params
+        vote = ga.new vote_params
 
         if vote.save!
           post_to_social_media(vote)
