@@ -4,6 +4,10 @@ class ProjectsController < ApplicationController
 
   end
 
+  def show
+    @project = GeneralAppropriation.find params[:id]
+  end
+
   def region
     @region = Area.find params[:id]
     @descriptor = @region

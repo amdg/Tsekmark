@@ -2,7 +2,8 @@ require 'api'
 
 Tsekmark::Application.routes.draw do
   authenticated :user do
-    root :to => 'dashboard#index'
+    #root :to => 'dashboard#index'
+    root :to => 'sectors#index'
   end
 
   devise_for :users, :controllers => {:sessions => "sessions", :omniauth_callbacks => "users/omniauth_callbacks", :registrations => "users/registrations" }
@@ -31,7 +32,7 @@ Tsekmark::Application.routes.draw do
   get "sectors/list", :to => 'sectors#list'
   get "regions/list", :to => 'regions#list'
   get "departments/:id", :to => 'departments#index'
-  get "projects/:id", :to => 'projects#index'
+  get "projects/:id", :to => 'projects#show'
   get "projects/region/:id", :to => 'projects#region'
   get "projects/department/:id", :to => 'projects#department'
   get "projects/department_list/:id", :to => 'projects#department_list'
