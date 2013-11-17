@@ -62,6 +62,5 @@ end
 
 gem "thin", "~> 1.6.1"
 gem "open4"
-gem "unicorn"
 gem "aws-sdk", "~> 1.5.7"
 gem "fog"

@@ -196,7 +196,6 @@ GEM
     json (1.8.1)
     jwt (0.1.8)
       multi_json (>= 1.5)
-    kgio (2.8.1)
     koala (1.7.0rc1)
       addressable
       faraday
@@ -285,7 +284,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    raindrops (0.12.0)
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
@@ -335,10 +333,6 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.7.0)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
     uuidtools (2.1.4)
     virtus (1.0.0)
       axiom-types (~> 0.0.5)
@@ -406,4 +400,3 @@ DEPENDENCIES
   therubyracer (~> 0.12.0)
   thin (~> 1.6.1)
   uglifier (~> 2.3.1)
-  unicorn
