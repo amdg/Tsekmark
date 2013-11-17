@@ -32,7 +32,7 @@ com.tsekmark.views.departments = {
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
-      node.append("a").attr("href", function(d) { return "/projects/"+ d.id; });
+      node.append("a").attr("href", function(d) { return "/projects/department/"+ d.id; });
       d3.selectAll("button").on("click", function change() {
 
         if($(this).hasClass('buzz-filter')) {
@@ -73,7 +73,7 @@ com.tsekmark.views.departments = {
   },
 
   textFill: function(){
-    $('.node').textfill({ maxFontPixels: 72 });
+    $('.node').textfill({ maxFontPixels: 48 });
     $('.node').tooltipster({
       theme: '.tooltipster-light'
     });

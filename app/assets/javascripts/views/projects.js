@@ -22,7 +22,7 @@ com.tsekmark.views.projects = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json($('#collage1').data('descriptor-name') + "_list/" + $('#collage1').data('descriptor-id'), function(error, root) {
+    d3.json('/projects/'+$('#collage1').data('descriptor-name') + "_list/" + $('#collage1').data('descriptor-id'), function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
@@ -74,7 +74,7 @@ com.tsekmark.views.projects = {
   },
 
   textFill: function(){
-    $('.node').textfill({ maxFontPixels: 72 });
+    $('.node').textfill({ maxFontPixels: 48 });
     $('.node').tooltipster({
       theme: '.tooltipster-light'
     });

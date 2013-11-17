@@ -22,7 +22,7 @@ com.tsekmark.views.regions = {
       .style("height", (height + margin.top + margin.bottom) + "px")
       .style("left", margin.left + "px");
 
-    d3.json("regions.json", function(error, root) {
+    d3.json("regions/list", function(error, root) {
       var node = div.datum(root).selectAll(".node")
         .data(treemap.nodes)
         .enter().append("div")
@@ -32,7 +32,7 @@ com.tsekmark.views.regions = {
         .style("background", function(d) { return d.children ? color(d.name) : null; })
 
       node.append("span").text(function(d) { return d.children ? null : d.name; });
-      node.append("a").attr("href", function(d) { return "/projects/"+ d.id; });
+      node.append("a").attr("href", function(d) { return "/projects/region/"+ d.id; });
       d3.selectAll("button").on("click", function change() {
 
         if($(this).hasClass('buzz-filter')) {
@@ -72,7 +72,7 @@ com.tsekmark.views.regions = {
   },
 
   textFill: function(){
-    $('.node').textfill({ maxFontPixels: 72 });
+    $('.node').textfill({ maxFontPixels: 48 });
     $('.node').tooltipster({
       theme: '.tooltipster-light'
     });

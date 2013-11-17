@@ -74,7 +74,7 @@ com.tsekmark.views.sectors = {
   },
 
   textFill: function(){
-    $('.node').textfill({ maxFontPixels: 72 });
+    $('.node').textfill({ maxFontPixels: 48 });
     $('.node').tooltipster({
       theme: '.tooltipster-light'
     });

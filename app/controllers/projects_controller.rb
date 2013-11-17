@@ -4,11 +4,23 @@ class ProjectsController < ApplicationController
 
   end
 
+  def region
+    @region = Area.find params[:id]
+    @descriptor = @region
+    render :index
+  end
+
+  def department
+    @dept = Department.find params[:id]
+    @descriptor = @dept
+    render :index
+  end
 
   def department_list
     @department = Department.find params[:id]
     @projects = @department.general_appropriations
     @descriptor = @department
+
     projects = @projects.inject([]) do |proj_arr, proj|
       stim_proj = proj.attributes
       stim_proj.merge!({
@@ -26,7 +38,7 @@ class ProjectsController < ApplicationController
 
   end
 
-  def region_list
+  def area_list
     @area = Area.find params[:id]
     @projects = @area.general_appropriations
     @descriptor = @area

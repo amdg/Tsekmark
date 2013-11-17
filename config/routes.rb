@@ -29,10 +29,13 @@ Tsekmark::Application.routes.draw do
   get "/invites/:provider/callback" => "invites#index"
 
   get "sectors/list", :to => 'sectors#list'
+  get "regions/list", :to => 'regions#list'
   get "departments/:id", :to => 'departments#index'
   get "projects/:id", :to => 'projects#index'
+  get "projects/region/:id", :to => 'projects#region'
+  get "projects/department/:id", :to => 'projects#department'
   get "projects/department_list/:id", :to => 'projects#department_list'
-  get "projects/region_list/:id", :to => 'projects#region_list'
+  get "projects/area_list/:id", :to => 'projects#area_list'
   get "departments/sector_list/:id", :to => 'departments#sector_list'
   resources :sectors
   resources :regions
