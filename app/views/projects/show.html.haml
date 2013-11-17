@@ -1,0 +1,67 @@
+.well.well-large.jumbotron
+  %h3= @project.description
+  = @project.attributes
+
+.container
+  .row
+    .panel.panel-default.widget
+      .panel-heading
+        %span.glyphicon.glyphicon-comment
+        %h3.panel-title
+          Recent Votes and Comments
+        %span.label.label-info
+          78
+      .panel-body
+        %ul.list-group
+          %li.list-group-item
+            .row
+              .col-xs-2.col-md-1
+                %img.img-circle.img-responsive{alt: "", src: "http://placehold.it/80"}/
+              .col-xs-10.col-md-11
+                %div
+                  .mic-info
+                    %a{href: "#"} Anna G.
+                    on 2 Aug 2013
+                .comment-text
+                  Awesome design
+                .action
+                  %button.btn.btn-success.btn-xs{title: "Approved", type: "button"}
+                    %span.icon-thumbs-up.icon-white
+                  %button.btn.btn-danger.btn-xs{title: "Delete", type: "button"}
+                    %span.icon-thumbs-down.icon-white
+          %li.list-group-item
+            .row
+              .col-xs-2.col-md-1
+                %img.img-circle.img-responsive{alt: "", src: "http://placehold.it/80"}/
+              .col-xs-10.col-md-11
+                %div
+                  .mic-info
+                    %a{href: "#"} Mawi Alvarez
+                    on 11 Nov 2013
+                .comment-text
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                .action
+                  
+                    
+                  %button.btn.btn-success.btn-xs{title: "Approved", type: "button"}
+                    %span.icon-thumbs-up.icon-white
+                  %button.btn.btn-danger.btn-xs{title: "Delete", type: "button"}
+                    %span.icon-thumbs-down.icon-white
+          %li.list-group-item
+            .row
+              .col-xs-2.col-md-1
+                %img.img-circle.img-responsive{alt: "", src: "http://placehold.it/80"}/
+              .col-xs-10.col-md-11
+                %div
+                  .mic-info
+                    %a{href: "#"} Joseph Dayo
+                    on 11 Nov 2013
+                .comment-text
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                .action
+                  %button.btn.btn-success.btn-xs{title: "Approved", type: "button"}
+                    %span.icon-thumbs-up.icon-white
+                  %button.btn.btn-danger.btn-xs{title: "Delete", type: "button"}
+                    %span.icon-thumbs-down.icon-white

@@ -34,6 +34,7 @@ com.tsekmark.views.projects = {
       node.append("span").text(function(d) {
         return d.children ? null : d.name;
       });
+      node.append("a").attr("href", function(d) { return "/projects/"+ d.id; });
 
       d3.selectAll("button").on("click", function change() {
 
