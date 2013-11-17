@@ -6,10 +6,11 @@ class RegionsController < ApplicationController
 
   def list
     areas = Area.all.inject([]) do |areas_arr, area|
-      size = GeneralAppropriation.where(area_id: area.id).sum(:budget_ps) +
-          GeneralAppropriation.where(area_id: area.id).sum(:budget_mooe) +
-          GeneralAppropriation.where(area_id: area.id).sum(:budget_co)
-      count = GeneralAppropriation.where(area_id: area.id).count
+      result = GeneralAppropriation.where(area_id: area.id).limit(50)
+      size = result.sum(:budget_ps) +
+          result.sum(:budget_mooe) +
+          result.sum(:budget_co)
+      count = result.count
 
       stim_area = area.attributes
       stim_area.merge!({

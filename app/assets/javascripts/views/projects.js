@@ -59,7 +59,7 @@ com.tsekmark.views.projects = {
 
 
       });
-      com.tsekmark.views.projects.textFill();
+ //     com.tsekmark.views.projects.textFill();
     });
     $('.btn-lg').tooltipster({
       theme: '.tooltipster-light'

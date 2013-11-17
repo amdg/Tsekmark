@@ -22,7 +22,7 @@ class ProjectsController < ApplicationController
 
   def department_list
     @department = Department.find params[:id]
-    @projects = @department.general_appropriations
+    @projects = @department.general_appropriations.limit(50)
     @descriptor = @department
 
     projects = @projects.inject([]) do |proj_arr, proj|
@@ -30,10 +30,10 @@ class ProjectsController < ApplicationController
       stim_proj.merge!({
         name: proj.description,
         upvotes: Forgery(:basic).number(:at_least => 250, :at_most => 800),
-        size: Forgery(:basic).number(:at_least => 200000, :at_most => 3000000),
+        size: proj.budget_ps + proj.budget_mooe + proj.budget_co,
         downvotes: Forgery(:basic).number(:at_least => 250, :at_most => 800),
         buzz: Forgery(:basic).number(:at_least => 2, :at_most => 25),
-        count: Forgery(:basic).number(:at_least => 5, :at_most => 25)})
+        count: 1})
 
       proj_arr << {name: proj.description || '---', children: [stim_proj]}
     end
