@@ -5,7 +5,9 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.brand{:href => root_path} tsekmark
+
+      = link_to root_path, class: 'pull-left' do
+        = image_tag 'logo.png'
       .nav-collapse.collapse
         %ul.nav
           %li

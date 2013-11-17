@@ -16,8 +16,10 @@
         .row.jumbotron
           .span12
             .hero-unit
-              %h1
-                TsekMark
+
+              -#%h1
+              -#  = image_tag 'logo.png', class: 'img-circle'
+
               = link_to omniauth_authorize_path(User, 'facebook'), class: "btn btn-large btn-info btn-facebook", style: 'margin-bottom: 20px;' do
                 Sign in with Facebook
         .row
